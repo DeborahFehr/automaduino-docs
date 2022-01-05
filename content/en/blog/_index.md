@@ -1,5 +1,5 @@
 ---
-title: "Docsy Blog"
+title: "Automaduino Blog"
 linkTitle: "Blog"
 menu:
   main:
