@@ -4,3 +4,8 @@ Add styles or override variables from the theme here.
 
 */
 
+// Colors
+
+$primary: #19969C !default;
+$primary-light: lighten($primary, 75%) !default;
+$secondary: #15787D !default;

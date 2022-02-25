@@ -42,7 +42,7 @@ pygmentsUseClasses = false
 pygmentsUseClassic = false
 #pygmentsOptions = "linenos=table"
 # See https://help.farbox.com/pygments.html
-pygmentsStyle = "tango"
+pygmentsStyle = "arduino"
 
 # Configure how URLs look like per section.
 [permalinks]
@@ -89,9 +89,9 @@ time_format_blog = "02.01.2006"
       unsafe = true
   [markup.highlight]
       # See a complete list of available styles at https://xyproto.github.io/splash/docs/all.html
-      style = "tango"
+      style = "arduino"
       # Uncomment if you want your chosen highlight style used for code blocks without a specified language
-      # guessSyntax = "true"
+      guessSyntax = "true"
 
 # Everything below this are Site Params
 
