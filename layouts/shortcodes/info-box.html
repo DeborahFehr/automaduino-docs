@@ -1,0 +1,23 @@
+<div class="card mb-4">
+    {{ with $.Get "header" }}
+      <div class="card-header">
+        {{ if eq $.Page.File.Ext "md" }}
+          {{ $.Get "header" | markdownify }}
+        {{ else }}
+          {{ $.Get "header" | htmlUnescape | safeHTML }}
+        {{ end }}
+      </div>
+    {{ end }}
+    <div class="card-body">
+
+        <div class="row">
+            <p class="card-text">
+                {{ with $.Inner }}
+                        {{ $.Inner }}
+                {{ end }}
+                </p>
+            
+          </div>
+    </div>
+  </div>
+  

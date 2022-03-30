@@ -1,0 +1,9 @@
+<div class="col-4">
+    {{ with $.Inner }}
+        {{ if eq $.Page.File.Ext "md" }}
+            {{ $.Inner | markdownify }}
+        {{ else }}
+            {{ $.Inner | htmlUnescape | safeHTML }}
+        {{ end }}
+    {{ end }}
+</div>

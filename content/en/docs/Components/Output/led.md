@@ -7,41 +7,51 @@ description: >
   A motion sensor detects motion within a certain range.
 ---
 
-
-{{< cardpane >}}
-  {{< card header="Information">}}
-
+{{< info-box header="Information">}}
+{{< info-text >}}
   **Type** : Sensor
 
-  **Action** : Digital Read
-
-  **Action Function** : `var foo = "bar";`
+  **Mode** : Digital
 
   **Pins** : 0-7
 
-  **Output Values** : 0-1024
+  **Output Values** : 0-1023
 
-  **Text Tutorial** : [funduino](https://gohugo.io) 
+  **Tutorial** : [funduino](https://gohugo.io) 
 
-{{< /card >}}
-{{< card >}}
+  {{% pageinfo color="primary" %}}
+**Note:** Use with resistance
+{{% /pageinfo %}}
+
+  {{< /info-text >}}
+
+  {{< info-image >}}
    ![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg/240px-Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg)
    
-   _The photo above of the Spruce Picea abies shoot with foliage buds: Bjørn Erik Pedersen, CC-BY-SA._
-{{< /card >}}
-{{< /cardpane >}}
+   _Image by funduino, CC-BY-SA._
+
+  {{< /info-image >}}
+
+{{< /info-box >}}
 
 
-{{< alert color="warning" >}}This is a warning with a title.{{< /alert >}}
+## Functions
 
-#### Example Graph
 
+#### On
+
+{{< info-box >}}
+
+  {{< info-image >}}
    ![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg/240px-Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg)
+   
+   _On State_
 
+  {{< /info-image >}}
 
-#### Generated Code
-
-{{< tabpane >}}
+{{< info-text >}}
+  
+  {{< tabpane >}}
   {{< tab header="Functions" >}}
 Code
   {{< /tab >}}
@@ -52,3 +62,10 @@ Code
  Code
   {{< /tab >}}
 {{< /tabpane >}}
+
+  {{< /info-text >}}
+
+
+
+{{< /info-box >}}
+
