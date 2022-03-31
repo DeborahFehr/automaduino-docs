@@ -9,16 +9,19 @@ menu:
 ---
 
 {{% pageinfo %}}
-This is a placeholder page that shows you how to use this template site.
+Learn how to start with Automaduino!
 {{% /pageinfo %}}
 
 
-This section is where the user documentation for your project lives - all the information your users need to understand and successfully use your project. 
+Automaduino is a visual programming language using finite state automata for the Arduino. The goal of this project is to determine whether a language like Automaduino achieves better results compared to a interlocking block language like blockly when used in teaching. You can use the [Online Editor](https://app.automaduino.com/) to try it out and generate code without having to code a single line. It currently supports 15 basic components.
 
-For large documentation sets we recommend adding content under the headings in this section, though if some or all of them don’t apply to your project feel free to remove them or add your own. You can see an example of a smaller Docsy documentation site in the [Docsy User Guide](https://docsy.dev/docs/), which lives in the [Docsy theme repo](https://github.com/google/docsy/tree/master/userguide) if you'd like to copy its docs section. 
+## Installation
 
-Other content such as marketing material, case studies, and community updates should live in the [About](/about/) and [Community](/community/) pages.
+You can start with our [Online Editor](https://app.automaduino.com/)! 
 
-Find out how to use the Docsy theme in the [Docsy User Guide](https://docsy.dev/docs/). You can learn more about how to organize your documentation (and how we organized this site) in [Organizing Your Content](https://docsy.dev/docs/best-practices/organizing-content/).
+_Automaduino will soon be available for Windows Desktop here._
 
+## What's next?
 
+You can start by reading about the [Concepts](/docs/concepts/) or head over to the [Getting Started](/docs/getting-started/) guide to learn more about how to use Automaduino. 
+If you need more information about how the Arduino works checkout our [Workshop](/docs/workshop/) material. There you'll find basic instructions on how to use the Arduino and worksheets to try it out!

@@ -4,51 +4,72 @@ linkTitle: "Temperature Sensor"
 date: 2022-24-02
 weight: 2
 description: >
-  A motion sensor detects motion within a certain range.
+  A temperature sensor measures the current temperature in the air.
 ---
 
-
-{{< cardpane >}}
-  {{< card header="Information">}}
-
+{{< info-box header="Information">}}
+{{< info-text >}}
   **Type** : Sensor
 
-  **Action** : Digital Read
+  **Mode** : Analog
 
-  **Action Function** : `var foo = "bar";`
+  **Pins** : 0-7 (analog)
 
-  **Pins** : 0-7
+  **Output Values** : Value in Celsius (0-40)
 
-  **Output Values** : 0-1024
+  **Tutorial** : [funduino](https://funduino.de/nr-10-temperatur-messen) 
 
-  **Text Tutorial** : [funduino](https://gohugo.io) 
+  {{% pageinfo color="primary" %}}
+**Note:** The value needs to be transformed to celsius! See code below.
+{{% /pageinfo %}}
 
-{{< /card >}}
-{{< card >}}
-   ![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg/240px-Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg)
+  {{< /info-text >}}
+
+  {{< info-image >}}
+   ![](https://funduinoshop.com/media/image/ec/1e/17/temperatursensor-tmp36gt9z-arduino.jpg)
    
-   _The photo above of the Spruce Picea abies shoot with foliage buds: Bjørn Erik Pedersen, CC-BY-SA._
-{{< /card >}}
-{{< /cardpane >}}
+   _Image by [funduino](https://funduinoshop.com/media/image/ec/1e/17/temperatursensor-tmp36gt9z-arduino.jpg), CC-BY-SA._
+
+  {{< /info-image >}}
+
+{{< /info-box >}}
 
 
-{{< alert color="warning" >}}This is a warning with a title.{{< /alert >}}
+## Functions
 
-#### Example Graph
+#### Analog Read
 
-   ![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg/240px-Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg)
+{{< info-box >}}
 
+  {{< info-image >}}
+   ![](/docs/components/temperaturesensor.png)
+   
+   _Analog Read State_
 
-#### Generated Code
+  {{< /info-image >}}
 
-{{< tabpane >}}
+{{< info-text >}}
+
+Reads a analog value and transforms it to Celsius.
+  
+  {{< tabpane id="1">}}
   {{< tab header="Functions" >}}
-Code
+void function_0_temperatureSensor(){
+value = map(analogRead(pin_0_temperatureSensor), 0, 410, -50, 150);
+function_0_temperatureSensor();
+}
   {{< /tab >}}
   {{< tab header="Abridged" >}}
-Code
+value = map(analogRead(pin_1_temperatureSensor), 0, 410, -50, 150);
   {{< /tab >}}
   {{< tab header="Switch" >}}
- Code
+void function_0_temperatureSensor(){
+value = map(analogRead(pin_1_temperatureSensor), 0, 410, -50, 150);
+state = 1;
+}
   {{< /tab >}}
 {{< /tabpane >}}
+
+  {{< /info-text >}}
+
+{{< /info-box >}}

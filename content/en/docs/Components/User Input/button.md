@@ -4,51 +4,68 @@ linkTitle: "Button"
 date: 2022-24-02
 weight: 1
 description: >
-  A motion sensor detects motion within a certain range.
+  A button will detect if a user presses it.
 ---
 
+{{< info-box header="Information">}}
+{{< info-text >}}
+  **Type** : User Input
 
-{{< cardpane >}}
-  {{< card header="Information">}}
+  **Mode** : Digital
 
-  **Type** : Sensor
+  **Pins** : 0-14
 
-  **Action** : Digital Read
+  **Output Values** : 0-1
 
-  **Action Function** : `var foo = "bar";`
+  **Tutorial** : [funduino](https://funduino.de/nr-5-taster-am-arduino) 
 
-  **Pins** : 0-7
+  {{< /info-text >}}
 
-  **Output Values** : 0-1024
-
-  **Text Tutorial** : [funduino](https://gohugo.io) 
-
-{{< /card >}}
-{{< card >}}
-   ![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg/240px-Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg)
+  {{< info-image >}}
+   ![](https://funduinoshop.com/media/image/19/1b/4e/4x-kurzhubtaster-2-pins-12x12x6mm-arduino.jpg)
    
-   _The photo above of the Spruce Picea abies shoot with foliage buds: Bjørn Erik Pedersen, CC-BY-SA._
-{{< /card >}}
-{{< /cardpane >}}
+   _Image by [funduino](https://funduinoshop.com/media/image/19/1b/4e/4x-kurzhubtaster-2-pins-12x12x6mm-arduino.jpg), CC-BY-SA._
+
+  {{< /info-image >}}
+
+{{< /info-box >}}
 
 
-{{< alert color="warning" >}}This is a warning with a title.{{< /alert >}}
+## Functions
 
-#### Example Graph
+#### Await Input
 
-   ![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg/240px-Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg)
+{{< info-box >}}
 
+  {{< info-image >}}
+   ![](/docs/components/button.png)
+   
+   _Await Input State_
 
-#### Generated Code
+  {{< /info-image >}}
 
-{{< tabpane >}}
+{{< info-text >}}
+
+Awaits a digital value.
+  
+  {{< tabpane id="1">}}
   {{< tab header="Functions" >}}
-Code
+void function_0_button(){
+value = digitalRead(pin_0_button);
+function_0_button();
+}
   {{< /tab >}}
   {{< tab header="Abridged" >}}
-Code
+value = digitalRead(pin_0_button);
   {{< /tab >}}
   {{< tab header="Switch" >}}
- Code
+void function_0_button(){
+value = digitalRead(pin_0_button);
+state = 1;
+}
   {{< /tab >}}
 {{< /tabpane >}}
+
+  {{< /info-text >}}
+
+{{< /info-box >}}

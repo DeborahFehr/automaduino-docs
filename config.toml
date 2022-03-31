@@ -194,3 +194,7 @@ enable = false
         desc = "Development takes place here!"
 
 
+[[menu.main]]
+    name = "Editor"
+    weight = 50
+    url = "https://app.automaduino.com/"

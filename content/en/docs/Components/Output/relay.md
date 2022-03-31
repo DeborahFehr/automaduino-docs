@@ -7,48 +7,104 @@ description: >
   A motion sensor detects motion within a certain range.
 ---
 
+{{< info-box header="Information">}}
+{{< info-text >}}
+  **Type** : Output
 
-{{< cardpane >}}
-  {{< card header="Information">}}
+  **Mode** : Digital
 
-  **Type** : Sensor
+  **Pins** : 0-14
 
-  **Action** : Digital Read
+  **Tutorial** : [funduino](https://funduino.de/nr-15-relais) 
 
-  **Action Function** : `var foo = "bar";`
+  {{% pageinfo color="primary" %}}
+**Note:** Be careful with external energy sources!
+{{% /pageinfo %}}
 
-  **Pins** : 0-7
+  {{< /info-text >}}
 
-  **Output Values** : 0-1024
-
-  **Text Tutorial** : [funduino](https://gohugo.io) 
-
-{{< /card >}}
-{{< card >}}
-   ![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg/240px-Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg)
+  {{< info-image >}}
+   ![](https://funduinoshop.com/media/image/9d/b7/e9/relais_karte_1-kanal_5v_230V.jpg)
    
-   _The photo above of the Spruce Picea abies shoot with foliage buds: Bjørn Erik Pedersen, CC-BY-SA._
-{{< /card >}}
-{{< /cardpane >}}
+   _Image by [funduino](https://funduinoshop.com/media/image/9d/b7/e9/relais_karte_1-kanal_5v_230V.jpg), CC-BY-SA._
+
+  {{< /info-image >}}
+
+{{< /info-box >}}
 
 
-{{< alert color="warning" >}}This is a warning with a title.{{< /alert >}}
+## Functions
 
-#### Example Graph
+#### On
 
-   ![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg/240px-Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg)
+{{< info-box >}}
 
+  {{< info-image >}}
+   ![](/docs/components/relay_on.png)
+   
+   _On State_
 
-#### Generated Code
+  {{< /info-image >}}
 
-{{< tabpane >}}
+{{< info-text >}}
+
+Switches the component off.
+  
+  {{< tabpane id="1">}}
   {{< tab header="Functions" >}}
-Code
+void function_0_relay(){
+digitalWrite(pin_0_relay, HIGH);
+function_0_relay();
+}
   {{< /tab >}}
   {{< tab header="Abridged" >}}
-Code
+digitalWrite(pin_0_relay, HIGH);
   {{< /tab >}}
   {{< tab header="Switch" >}}
- Code
+void function_0_relay(){
+digitalWrite(pin_0_relay, HIGH);
+state = 1;
+}
   {{< /tab >}}
 {{< /tabpane >}}
+
+  {{< /info-text >}}
+
+{{< /info-box >}}
+
+#### Off
+
+{{< info-box >}}
+
+  {{< info-image >}}
+   ![](/docs/components/relay_off.png)
+   
+   _Off State_
+
+  {{< /info-image >}}
+
+{{< info-text >}}
+
+  Switches the component off.
+  
+  {{< tabpane id="2">}}
+  {{< tab header="Functions" >}}
+void function_0_relay(){
+digitalWrite(pin_0_relay, LOW);
+function_0_relay();
+}
+  {{< /tab >}}
+  {{< tab header="Abridged" >}}
+digitalWrite(pin_0_relay, LOW);
+  {{< /tab >}}
+  {{< tab header="Switch" >}}
+void function_0_relay(){
+digitalWrite(pin_0_relay, LOW);
+state = 1;
+}
+  {{< /tab >}}
+{{< /tabpane >}}
+
+  {{< /info-text >}}
+
+{{< /info-box >}}

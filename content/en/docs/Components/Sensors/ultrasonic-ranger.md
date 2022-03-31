@@ -4,51 +4,125 @@ linkTitle: "Ultrasonic Ranger"
 date: 2022-24-02
 weight: 6
 description: >
-  A motion sensor detects motion within a certain range.
+  A ultrasonic ranger uses a ultrasonic wave to measure a distance.
 ---
 
-
-{{< cardpane >}}
-  {{< card header="Information">}}
-
+{{< info-box header="Information">}}
+{{< info-text >}}
   **Type** : Sensor
 
-  **Action** : Digital Read
+  **Mode** : Digital
 
-  **Action Function** : `var foo = "bar";`
+  **Pins** : 0-14
 
-  **Pins** : 0-7
+  **Output Values** : Distance in cm (2-300)
 
-  **Output Values** : 0-1024
+  **Tutorial** : [funduino](https://funduino.de/nr-11-entfernungen-messen) 
 
-  **Text Tutorial** : [funduino](https://gohugo.io) 
+    {{% pageinfo color="primary" %}}
+**Note:** To use this component use the two states to send and receive a wave!
+{{% /pageinfo %}}
 
-{{< /card >}}
-{{< card >}}
-   ![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg/240px-Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg)
+  {{% pageinfo color="primary" %}}
+**Note:** The read value needs to be transformed! See code below
+{{% /pageinfo %}}
+
+  {{< /info-text >}}
+
+  {{< info-image >}}
+   ![](https://funduinoshop.com/media/image/5d/e9/53/ultraschallsensor_hc-sr04_arduino_kompatibel_frontansicht.jpg)
    
-   _The photo above of the Spruce Picea abies shoot with foliage buds: Bjørn Erik Pedersen, CC-BY-SA._
-{{< /card >}}
-{{< /cardpane >}}
+   _Image by [funduino](https://funduinoshop.com/media/image/5d/e9/53/ultraschallsensor_hc-sr04_arduino_kompatibel_frontansicht.jpg), CC-BY-SA._
+
+  {{< /info-image >}}
+
+{{< /info-box >}}
 
 
-{{< alert color="warning" >}}This is a warning with a title.{{< /alert >}}
+## Functions
 
-#### Example Graph
+#### Send Wave
 
-   ![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg/240px-Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg)
+{{< info-box >}}
 
+  {{< info-image >}}
+   ![](/docs/components/ultrasonicranger-sender.png)
+   
+   _Send Wave State_
 
-#### Generated Code
+  {{< /info-image >}}
 
-{{< tabpane >}}
+{{< info-text >}}
+
+Sends a ultrasonic wave.
+  
+  {{< tabpane id="1">}}
   {{< tab header="Functions" >}}
-Code
+void function_0_Ultraschall_messer(){
+digitalWrite(pin_2_ultrasonicRanger, LOW);
+delay(5);
+digitalWrite(pin_2_ultrasonicRanger, HIGH);
+delay(10);
+digitalWrite(pin_2_ultrasonicRanger, LOW);
+function_1_Ultraschall_messer();
+}
   {{< /tab >}}
   {{< tab header="Abridged" >}}
-Code
+digitalWrite(pin_2_ultrasonicRanger, LOW);
+delay(5);
+digitalWrite(pin_2_ultrasonicRanger, HIGH);
+delay(10);
+digitalWrite(pin_2_ultrasonicRanger, LOW);
   {{< /tab >}}
   {{< tab header="Switch" >}}
- Code
+void function_0_Ultraschall_messer(){
+digitalWrite(pin_2_ultrasonicRanger, LOW);
+delay(5);
+digitalWrite(pin_2_ultrasonicRanger, HIGH);
+delay(10);
+digitalWrite(pin_2_ultrasonicRanger, LOW);
+state = 1;
+}
   {{< /tab >}}
 {{< /tabpane >}}
+
+  {{< /info-text >}}
+
+{{< /info-box >}}
+
+#### Receive Wave
+
+{{< info-box >}}
+
+  {{< info-image >}}
+   ![](/docs/components/ultrasonicranger-receiver.png)
+   
+   _Receive Wave State_
+
+  {{< /info-image >}}
+
+{{< info-text >}}
+
+Receive a ultrasonic wave.
+  
+  {{< tabpane id="2">}}
+  {{< tab header="Functions" >}}
+void function_1_Ultraschall_messer(){
+value = (pulseIn(pin_2_ultrasonicRanger, HIGH)/2) * 0.03432;
+function_1_Ultraschall_messer();
+}
+  {{< /tab >}}
+  {{< tab header="Abridged" >}}
+value = (pulseIn(pin_2_ultrasonicRanger, HIGH)/2) * 0.03432;
+  {{< /tab >}}
+  {{< tab header="Switch" >}}
+void function_1_Ultraschall_messer(){
+value = (pulseIn(pin_2_ultrasonicRanger, HIGH)/2) * 0.03432;
+state = 1; 
+}
+  {{< /tab >}}
+{{< /tabpane >}}
+
+  {{< /info-text >}}
+
+{{< /info-box >}}

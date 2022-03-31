@@ -4,51 +4,68 @@ linkTitle: "Loudness Sensor"
 date: 2022-24-02
 weight: 5
 description: >
-  A motion sensor detects motion within a certain range.
+  A loudness sensor measures noise.
 ---
 
-
-{{< cardpane >}}
-  {{< card header="Information">}}
-
+{{< info-box header="Information">}}
+{{< info-text >}}
   **Type** : Sensor
 
-  **Action** : Digital Read
+  **Mode** : Analog
 
-  **Action Function** : `var foo = "bar";`
+  **Pins** : 0-7 (analog)
 
-  **Pins** : 0-7
+  **Output Values** : 0-1023
 
-  **Output Values** : 0-1024
+  **Tutorial** : [polluxlabs](https://polluxlabs.net/arduino-tutorials/einen-sound-sensor-am-arduino-verwenden/) 
 
-  **Text Tutorial** : [funduino](https://gohugo.io) 
+  {{< /info-text >}}
 
-{{< /card >}}
-{{< card >}}
-   ![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg/240px-Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg)
+  {{< info-image >}}
+   ![](https://funduinoshop.com/media/image/48/c6/9b/waveshare-sound-modul-v2-mit-lm386-schallsensor-lautstaerkesensor-top.png)
    
-   _The photo above of the Spruce Picea abies shoot with foliage buds: Bjørn Erik Pedersen, CC-BY-SA._
-{{< /card >}}
-{{< /cardpane >}}
+   _Image by [funduino](https://funduinoshop.com/media/image/48/c6/9b/waveshare-sound-modul-v2-mit-lm386-schallsensor-lautstaerkesensor-top.png), CC-BY-SA._
+
+  {{< /info-image >}}
+
+{{< /info-box >}}
 
 
-{{< alert color="warning" >}}This is a warning with a title.{{< /alert >}}
+## Functions
 
-#### Example Graph
+#### Analog Read
 
-   ![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg/240px-Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg)
+{{< info-box >}}
 
+  {{< info-image >}}
+   ![](/docs/components/loudnesssensor.png)
+   
+   _Analog Read State_
 
-#### Generated Code
+  {{< /info-image >}}
 
-{{< tabpane >}}
+{{< info-text >}}
+
+Reads a analog value.
+  
+  {{< tabpane id="1">}}
   {{< tab header="Functions" >}}
-Code
+void function_0_Lautst_rke_sensor(){
+value = analogRead(pin_0_loudnessSensor);
+function_0_Lautst_rke_sensor();
+}
   {{< /tab >}}
   {{< tab header="Abridged" >}}
-Code
+value = analogRead(pin_0_loudnessSensor);
   {{< /tab >}}
   {{< tab header="Switch" >}}
- Code
+void function_0_Lautst_rke_sensor(){
+value = analogRead(pin_0_loudnessSensor);
+state = 1;
+}
   {{< /tab >}}
 {{< /tabpane >}}
+
+  {{< /info-text >}}
+
+{{< /info-box >}}

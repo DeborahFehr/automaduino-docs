@@ -7,48 +7,75 @@ description: >
   A motion sensor detects motion within a certain range.
 ---
 
+{{< info-box header="Information">}}
+{{< info-text >}}
+  **Type** : Output
 
-{{< cardpane >}}
-  {{< card header="Information">}}
+  **Mode** : Servo Library
 
-  **Type** : Sensor
+  **Pins** : 0-14
 
-  **Action** : Digital Read
+  **Tutorial** : [funduino](https://funduino.de/nr-12-servo-ansteuern) 
+  
+  {{% pageinfo color="primary" %}}
+**Library:** You need to import the servo library to use this component!
+{{% /pageinfo %}}
 
-  **Action Function** : `var foo = "bar";`
+  {{% pageinfo color="primary" %}}
+**Note:** Use with delay as the rotation takes some time. 
+{{% /pageinfo %}}
 
-  **Pins** : 0-7
+  {{< /info-text >}}
 
-  **Output Values** : 0-1024
-
-  **Text Tutorial** : [funduino](https://gohugo.io) 
-
-{{< /card >}}
-{{< card >}}
-   ![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg/240px-Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg)
+  {{< info-image >}}
+   ![](https://funduinoshop.com/media/image/a1/g0/17/25047.jpg)
    
-   _The photo above of the Spruce Picea abies shoot with foliage buds: Bjørn Erik Pedersen, CC-BY-SA._
-{{< /card >}}
-{{< /cardpane >}}
+   _Image by [funduino](https://funduinoshop.com/media/image/a1/g0/17/25047.jpg), CC-BY-SA._
+
+  {{< /info-image >}}
+
+{{< /info-box >}}
 
 
-{{< alert color="warning" >}}This is a warning with a title.{{< /alert >}}
+## Functions
 
-#### Example Graph
+#### Degree
 
-   ![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg/240px-Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg)
+{{< info-box >}}
 
+  {{< info-image >}}
+   ![](/docs/components/servo_0.png)
+   
+   _Turn servo to 0 degree_
 
-#### Generated Code
+   ![](/docs/components/servo_180.png)
+   
+   _Turn servo to 180 degree_
 
-{{< tabpane >}}
+  {{< /info-image >}}
+
+{{< info-text >}}
+
+This function will turn the servo to the degree specified in the function name. 
+  
+  {{< tabpane id="1">}}
   {{< tab header="Functions" >}}
-Code
+void function_1_servo(){
+servo_0.write(0);
+function_1_servo();
+}
   {{< /tab >}}
   {{< tab header="Abridged" >}}
-Code
+servo_0.write(0);
   {{< /tab >}}
   {{< tab header="Switch" >}}
- Code
+void function_0_servo(){
+servo_0.write(0);
+state = 1;
+}
   {{< /tab >}}
 {{< /tabpane >}}
+
+  {{< /info-text >}}
+
+{{< /info-box >}}

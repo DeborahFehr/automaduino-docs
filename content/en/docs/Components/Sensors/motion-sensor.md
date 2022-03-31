@@ -7,48 +7,65 @@ description: >
   A motion sensor detects motion within a certain range.
 ---
 
-
-{{< cardpane >}}
-  {{< card header="Information">}}
-
+{{< info-box header="Information">}}
+{{< info-text >}}
   **Type** : Sensor
 
-  **Action** : Digital Read
+  **Mode** : Digital
 
-  **Action Function** : `var foo = "bar";`
+  **Pins** : 0-14
 
-  **Pins** : 0-7
+  **Output Values** : 0-1
 
-  **Output Values** : 0-1024
+  **Tutorial** : [funduino](https://funduino.de/nr-07-bewegungsmelder-hc-sr501) 
 
-  **Text Tutorial** : [funduino](https://gohugo.io) 
+  {{< /info-text >}}
 
-{{< /card >}}
-{{< card >}}
-   ![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg/240px-Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg)
+  {{< info-image >}}
+   ![](https://funduinoshop.com/media/image/83/f8/e4/1071.jpg)
    
-   _The photo above of the Spruce Picea abies shoot with foliage buds: Bjørn Erik Pedersen, CC-BY-SA._
-{{< /card >}}
-{{< /cardpane >}}
+   _Image by [funduino](https://funduinoshop.com/media/image/83/f8/e4/1071.jpg), CC-BY-SA._
+
+  {{< /info-image >}}
+
+{{< /info-box >}}
 
 
-{{< alert color="warning" >}}This is a warning with a title.{{< /alert >}}
+## Functions
 
-#### Example Graph
+#### Digital Read
 
-   ![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg/240px-Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg)
+{{< info-box >}}
 
+  {{< info-image >}}
+   ![](/docs/components/motionsensor.png)
+   
+   _Digital Read State_
 
-#### Generated Code
+  {{< /info-image >}}
 
-{{< tabpane >}}
+{{< info-text >}}
+
+Reads a digital value. 
+  
+  {{< tabpane id="1">}}
   {{< tab header="Functions" >}}
-Code
+void function_0_motionSensor(){
+value = digitalRead(pin_0_motionSensor);
+function_0_motionSensor();
+}
   {{< /tab >}}
   {{< tab header="Abridged" >}}
-Code
+value = digitalRead(pin_0_motionSensor);
   {{< /tab >}}
   {{< tab header="Switch" >}}
- Code
+void function_0_motionSensor(){
+value = digitalRead(pin_0_motionSensor);
+state = 1;
+}
   {{< /tab >}}
 {{< /tabpane >}}
+
+  {{< /info-text >}}
+
+{{< /info-box >}}

@@ -4,51 +4,72 @@ linkTitle: "Humidity Sensor"
 date: 2022-24-02
 weight: 3
 description: >
-  A motion sensor detects motion within a certain range.
+  A humidity sensor measures the humidity of earth or water.
 ---
 
-
-{{< cardpane >}}
-  {{< card header="Information">}}
-
+{{< info-box header="Information">}}
+{{< info-text >}}
   **Type** : Sensor
 
-  **Action** : Digital Read
+  **Mode** : Analog
 
-  **Action Function** : `var foo = "bar";`
+  **Pins** : 0-7 (analog)
 
-  **Pins** : 0-7
+  **Output Values** : 0-1023
 
-  **Output Values** : 0-1024
+  **Tutorial** : [funduino](https://funduino.de/nr-17-feuchtigkeitssensor) 
 
-  **Text Tutorial** : [funduino](https://gohugo.io) 
+  {{% pageinfo color="primary" %}}
+**Note:** Only the lower parts can get wet!
+{{% /pageinfo %}}
 
-{{< /card >}}
-{{< card >}}
-   ![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg/240px-Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg)
+  {{< /info-text >}}
+
+  {{< info-image >}}
+   ![](https://funduinoshop.com/media/image/ed/1c/24/feuchtigkeitssensor-fuer-arduino-mikrocontroller-front.jpg)
    
-   _The photo above of the Spruce Picea abies shoot with foliage buds: Bjørn Erik Pedersen, CC-BY-SA._
-{{< /card >}}
-{{< /cardpane >}}
+   _Image by [funduino](https://funduinoshop.com/media/image/ed/1c/24/feuchtigkeitssensor-fuer-arduino-mikrocontroller-front.jpg), CC-BY-SA._
+
+  {{< /info-image >}}
+
+{{< /info-box >}}
 
 
-{{< alert color="warning" >}}This is a warning with a title.{{< /alert >}}
+## Functions
 
-#### Example Graph
+#### Analog Read
 
-   ![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg/240px-Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg)
+{{< info-box >}}
 
+  {{< info-image >}}
+   ![](/docs/components/humiditysensor.png)
+   
+   _Read Analog State_
 
-#### Generated Code
+  {{< /info-image >}}
 
-{{< tabpane >}}
+{{< info-text >}}
+
+Reads a analog value.
+  
+  {{< tabpane id="1">}}
   {{< tab header="Functions" >}}
-Code
+void function_0_humiditySensor(){
+value = analogRead(pin_0_humiditySensor);
+function_0_humiditySensor();
+}
   {{< /tab >}}
   {{< tab header="Abridged" >}}
-Code
+value = analogRead(pin_0_humiditySensor);
   {{< /tab >}}
   {{< tab header="Switch" >}}
- Code
+void function_0_humiditySensor(){
+value = analogRead(pin_0_humiditySensor);
+state = 1;
+}
   {{< /tab >}}
 {{< /tabpane >}}
+
+  {{< /info-text >}}
+
+{{< /info-box >}}

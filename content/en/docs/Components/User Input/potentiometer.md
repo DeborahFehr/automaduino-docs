@@ -4,51 +4,72 @@ linkTitle: "Potentiometer"
 date: 2022-24-02
 weight: 4
 description: >
-  A motion sensor detects motion within a certain range.
+  A potentiometer returns a dynamic value based on the rotation.
 ---
 
+{{< info-box header="Information">}}
+{{< info-text >}}
+  **Type** : User Input
 
-{{< cardpane >}}
-  {{< card header="Information">}}
+  **Mode** : Analog
 
-  **Type** : Sensor
+  **Pins** : 0-7 (analog)
 
-  **Action** : Digital Read
+  **Output Values** : 0-1023
 
-  **Action Function** : `var foo = "bar";`
+  **Tutorial** : [funduino](https://funduino.de/nr-17-feuchtigkeitssensor) 
 
-  **Pins** : 0-7
+  {{% pageinfo color="primary" %}}
+**Note:** Only the lower parts can get wet!
+{{% /pageinfo %}}
 
-  **Output Values** : 0-1024
+  {{< /info-text >}}
 
-  **Text Tutorial** : [funduino](https://gohugo.io) 
-
-{{< /card >}}
-{{< card >}}
-   ![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg/240px-Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg)
+  {{< info-image >}}
+   ![](https://funduinoshop.com/media/image/4f/86/67/8014.jpg)
    
-   _The photo above of the Spruce Picea abies shoot with foliage buds: Bjørn Erik Pedersen, CC-BY-SA._
-{{< /card >}}
-{{< /cardpane >}}
+   _Image by [funduino](https://funduinoshop.com/media/image/4f/86/67/8014.jpg), CC-BY-SA._
+
+  {{< /info-image >}}
+
+{{< /info-box >}}
 
 
-{{< alert color="warning" >}}This is a warning with a title.{{< /alert >}}
+## Functions
 
-#### Example Graph
+#### Await Input
 
-   ![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg/240px-Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg)
+{{< info-box >}}
 
+  {{< info-image >}}
+   ![](/docs/components/potentiometer.png)
+   
+   _Await Input State_
 
-#### Generated Code
+  {{< /info-image >}}
 
-{{< tabpane >}}
+{{< info-text >}}
+
+Awaits a analog value.
+  
+  {{< tabpane id="1">}}
   {{< tab header="Functions" >}}
-Code
+void function_0_Potentiometer(){
+value = analogRead(pin_0_potentiometer);
+function_0_Potentiometer();
+}
   {{< /tab >}}
   {{< tab header="Abridged" >}}
-Code
+value = analogRead(pin_0_potentiometer);
   {{< /tab >}}
   {{< tab header="Switch" >}}
- Code
+void function_0_Potentiometer(){
+value = analogRead(pin_0_potentiometer);
+state = 1;
+}
   {{< /tab >}}
 {{< /tabpane >}}
+
+  {{< /info-text >}}
+
+{{< /info-box >}}

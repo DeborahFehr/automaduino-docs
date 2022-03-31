@@ -4,51 +4,72 @@ linkTitle: "Switch"
 date: 2022-24-02
 weight: 2
 description: >
-  A motion sensor detects motion within a certain range.
+  A switch works similar to a button to detect an input. 
 ---
 
+{{< info-box header="Information">}}
+{{< info-text >}}
+  **Type** : User Input
 
-{{< cardpane >}}
-  {{< card header="Information">}}
+  **Mode** : Digital
 
-  **Type** : Sensor
+  **Pins** : 0-14
 
-  **Action** : Digital Read
+  **Output Values** : 0-1
 
-  **Action Function** : `var foo = "bar";`
+  **Tutorial** : [funduino](https://funduino.de/nr-5-taster-am-arduino) 
 
-  **Pins** : 0-7
+  {{% pageinfo color="primary" %}}
+**Note:** A switch works the same way as a button but you can always the the current status.
+{{% /pageinfo %}}
 
-  **Output Values** : 0-1024
+  {{< /info-text >}}
 
-  **Text Tutorial** : [funduino](https://gohugo.io) 
-
-{{< /card >}}
-{{< card >}}
-   ![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg/240px-Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg)
+  {{< info-image >}}
+   ![](https://funduinoshop.com/media/image/56/75/f9/schalter-mit-einer-position-2-54mm-front2.jpg)
    
-   _The photo above of the Spruce Picea abies shoot with foliage buds: Bjørn Erik Pedersen, CC-BY-SA._
-{{< /card >}}
-{{< /cardpane >}}
+   _Image by [funduino](https://funduinoshop.com/media/image/56/75/f9/schalter-mit-einer-position-2-54mm-front2.jpg), CC-BY-SA._
+
+  {{< /info-image >}}
+
+{{< /info-box >}}
 
 
-{{< alert color="warning" >}}This is a warning with a title.{{< /alert >}}
+## Functions
 
-#### Example Graph
+#### Await Input
 
-   ![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg/240px-Picea_abies_shoot_with_buds%2C_Sogndal%2C_Norway.jpg)
+{{< info-box >}}
 
+  {{< info-image >}}
+   ![](/docs/components/switch.png)
+   
+   _Await Input State_
 
-#### Generated Code
+  {{< /info-image >}}
 
-{{< tabpane >}}
+{{< info-text >}}
+
+Awaits a digital value.
+  
+  {{< tabpane id="1">}}
   {{< tab header="Functions" >}}
-Code
+void function_0_Schalter(){
+value = digitalRead(pin_0_switch);
+function_0_Schalter();
+}
   {{< /tab >}}
   {{< tab header="Abridged" >}}
-Code
+value = digitalRead(pin_0_switch);
   {{< /tab >}}
   {{< tab header="Switch" >}}
- Code
+void function_0_Schalter(){
+value = digitalRead(pin_0_switch);
+state = 1;
+}
   {{< /tab >}}
 {{< /tabpane >}}
+
+  {{< /info-text >}}
+
+{{< /info-box >}}
