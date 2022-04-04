@@ -32,6 +32,10 @@ description: >
 
 {{< /info-box >}}
 
+## Circuit Plan
+![](/docs/connectionplan/steckplan_buzzer.png)
+   
+   _Plan made with [Fritzing](https://fritzing.org/)._
 
 ## Functions
 

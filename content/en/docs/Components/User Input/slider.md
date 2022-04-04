@@ -30,6 +30,10 @@ description: >
 
 {{< /info-box >}}
 
+## Circuit Plan
+![](/docs/connectionplan/steckplan_slider.png)
+   
+   _Plan made with [Fritzing](https://fritzing.org/)._
 
 ## Functions
 

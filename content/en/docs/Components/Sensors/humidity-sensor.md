@@ -34,6 +34,10 @@ description: >
 
 {{< /info-box >}}
 
+## Circuit Plan
+![](/docs/connectionplan/steckplan_humiditysensor.png)
+   
+   _Plan made with [Fritzing](https://fritzing.org/)._
 
 ## Functions
 
