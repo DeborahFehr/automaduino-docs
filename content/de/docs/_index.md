@@ -1,7 +1,7 @@
 
 ---
-title: "Documentation"
-linkTitle: "Documentation"
+title: "Dokumentation"
+linkTitle: "Dokumentation"
 weight: 20
 menu:
   main:
@@ -9,19 +9,20 @@ menu:
 ---
 
 {{% pageinfo %}}
-Learn how to start with Automaduino!
+So startest du mit Automaduino!
 {{% /pageinfo %}}
 
-
-Automaduino is a visual programming language using finite state automata for the Arduino. The goal of this project is to determine whether a language like Automaduino achieves better results compared to a interlocking block language like blockly when used in teaching. You can use the [Online Editor](https://app.automaduino.com/) to try it out and generate code without having to code a single line. It currently supports 15 basic components.
+Automaduino ist eine visuelle Programmiersprache basierend auf endlichen Automaten für den Arduino. Das Ziel dieses Projektes ist es herauszufinden ob eine Sprache wie Automaduino bessere Ergebnisse bei der Verwendung in der Lehre erzielt im Vergleich zu verzahnten Blocksprachen wie blockly. 
+Du kannst den [Online Editor](https://app.automaduino.com/) verwenden um Code zu erzeugen ohne eine Zeile selbst zu schreiben! Aktuell werden 15 Komponenten unterstützt. 
 
 ## Installation
 
-You can start with our [Online Editor](https://app.automaduino.com/)! 
+Aktuell ist Automaduino im [Online Editor](https://app.automaduino.com/) verfügbar. 
 
-_Automaduino will soon be available for Windows Desktop here._
+_Automaduino ist bald verfügbar Windows Desktop hier._
 
-## What's next?
+## Wie geht es weiter?
 
-You can start by reading about the [Concepts](/docs/concepts/) or head over to the [Getting Started](/docs/getting-started/) guide to learn more about how to use Automaduino. 
-If you need more information about how the Arduino works checkout our [Workshop](/docs/workshop/) material. There you'll find basic instructions on how to use the Arduino and worksheets to try it out!
+Wenn du mehr über den theoretischen Hintergrund wissen möchtest schau die die [Konzepte](/docs/concepts/) an oder bau dein erstes Projekt unter [Erste Schritte](/docs/getting-started/). 
+
+Wenn du einen Einstieg in die Benutzung des Arduinos brauchst schau dir die [Workshop](/docs/workshop/) Unterlagen an. Dort findest du auch mehr Arbeitsblätter mit Projekten. 

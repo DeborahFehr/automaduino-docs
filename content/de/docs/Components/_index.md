@@ -1,11 +1,11 @@
 
 ---
-title: "Components"
-linkTitle: "Components"
+title: "Komponenten"
+linkTitle: "Komponenten"
 weight: 6
 date: 2022-24-02
 description: >
-  What components are currently supported?
+  Welche Komponenten werden aktuell unterstützt?
 ---
 
-The following sections describes the available components in Automaduino. They're grouped like in the editor into three sections: Output, User Input and Sensors.
+Die folgenden Seiten beschreiben die verfügbaren Komponenten in Automaduino. Sie sind wie im Editor gruppiert: Ausgabe, Benutzereingabe und Sensoren.

@@ -1,24 +1,24 @@
 ---
-title: "Day Three"
+title: "Tag 3"
 date: 2022-03-29
 weight: 3
 description: >
-  The final day will focus on the transition to textbased programming. We explain the Arduino code and try to write it by ourselves. We also show how to use tutorials to use advanced components.
+  Der letzte Tag dreht sich um den Übergang zum textbasierten Programmieren. Wir schauen uns den Arduino Code an und versuchen ihn selbst zu schreiben. Wir schauen uns außerdem Tutorials für weitere Komponenten an. 
 ---
 
-### Presentation
+### Präsentation
 
-* [Presentation](/workshop/de/day-3/Automaduino_Workshop_Tag3.pdf)
+* [Präsentation](/workshop/de/day-3/Automaduino_Workshop_Tag3.pdf)
 
-### Cheat Sheets
+### Merkblätter
 
-* [Cheat Sheet 1](/workshop/de/day-3/Automaduino-Merkblatt-6.pdf)
-* [Cheat Sheet 2](/workshop/de/day-3/Automaduino-Merkblatt-7.pdf)
+* [Merkblatt 1](/workshop/de/day-3/Automaduino-Merkblatt-6.pdf)
+* [Merkblatt 2](/workshop/de/day-3/Automaduino-Merkblatt-7.pdf)
 
-### Work Sheets
+### Arbeitsblätter
 
-* [Work Sheet 1](/workshop/de/day-3/Automaduino-Arbeitsblatt-11.pdf)
-* [Work Sheet 2](/workshop/de/day-3/Automaduino-Arbeitsblatt-12.pdf)
-* [Work Sheet 3](/workshop/de/day-3/Automaduino-Arbeitsblatt-13.pdf)
-* [Work Sheet 4](/workshop/de/day-3/Automaduino-Arbeitsblatt-14.pdf)
-* [Work Sheet 4](/workshop/de/day-3/Automaduino-Arbeitsblatt-15.pdf)
+* [Arbeitsblatt 1](/workshop/de/day-3/Automaduino-Arbeitsblatt-11.pdf)
+* [Arbeitsblatt 2](/workshop/de/day-3/Automaduino-Arbeitsblatt-12.pdf)
+* [Arbeitsblatt 3](/workshop/de/day-3/Automaduino-Arbeitsblatt-13.pdf)
+* [Arbeitsblatt 4](/workshop/de/day-3/Automaduino-Arbeitsblatt-14.pdf)
+* [Arbeitsblatt 4](/workshop/de/day-3/Automaduino-Arbeitsblatt-15.pdf)

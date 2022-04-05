@@ -1,60 +1,59 @@
 ---
-title: "Blink Example"
-linkTitle: "Blink Example"
+title: "Blink Beispiel"
+linkTitle: "Blink Beispiel"
 date: 2022-04-01
 description: >
-  This example teaches you how to generate the code for the blink program!
+  In diesem Beispiel wird erklärt wie du den Code für das Blinkbeispiel generierst!
 ---
 
-The blink program is the _Hello World_ program for the Arduino. We use a single LED and turn it on and off again with a slight delay. As a result the LED will blink, hence the name. If done correctly we can verify that our Arduino is working correctly and the connection is working.
+Das Blink Programm ist das _Hallo Welt_ Programm für den Arduino. Wir verwenden eine einzelne LED und schalten sie an und wieder aus mit einer kleinen Verzögerung. Als Ergebnis wird die LED blinken, daher auch der name. Wenn dieses Programm läuft haben wir bewiesen, dass der Arduino korrekt angeschlossen ist und funktioniert.
 
-### Scheme
+### Steckplan
 
-To get started grab a LED and a resistor. Connect the LED to Pin 7 and use a breadboard to connect the GND pin with the resistor and LED. 
+Besorg dir eine LED und einen Widerstand (z.B. 100 Ohm). Verbinde die LED mit Pin 7 und verwende ein Steckbrett um den GND Pin mit dem Widerstand zu verbinden. 
 
-See the scheme below on an example for the connections.
+Unten siehst du einen Steckplan mit einer Beispielverbindung. 
 
 ![](/docs/tutorials/blink-sketch.png)
 
-_Connection scheme for the blink program_
+_Steckplan für das Blink Beispiel_
 
 ### Sketch
 
-Now we first think about how our automata should look like. Use a pen and paper and try to sketch what is happening. An example automata is shown below. 
+Jetzt überlegen wir uns wie unser Automat aussehen soll. Wir benutzen Papier und Stift und skizzieren was passiert. Hier siehst du eine Skizze. 
 
 ![](/docs/tutorials/blink-drawing.png)
 
-_Blink sketch example_
+_Blink Skizze Beispiel_
 
-#### Add States
+#### Zustände hinzufügen
 
-Now we're going to translate our sketch to the Automaduino. For this we add two states to our canvas: A LED that is on and a LED that is off. 
+Jetzt setzen wir unsere Skizze in Automaduino um. Dazu fügen wir zwei Zustände hinzu: Eine eingeschaltete und eine ausgeschaltete LED. 
 
 ![](/docs/tutorials/blink-states.png)
 
-_Blink states_
+_Blink Zustände_
 
-#### Add Transitions
+#### Übergänge hinzufügen
 
-We're now going to connect the states. We start by connecting the start point with the ON state. After we turned the LED on, we want to wait a short time and then turn it off. To do this we connect it with the OFF state and select a delay of 1000 ms. To repeat our blink we connect back to the ON state. 
+Jetzt verbinden wir diese Zustände. Wir verbinden der Startpunkt mit dem AN Zustand. Danach warten wir kurz, dargestellt durch einen _nach_ Übergang, und gehen zum AUS Zustand über. Nach einer weiteren kurzen Wartezeit wechseln wir wieder zum AN Zustand. 
 
 ![](/docs/tutorials/blink-transitions.png)
 
-_Blink transitions_
+_Blink Übergänge_
 
-### Assign Pins
+### Pins zuweisen
 
-To finish our code generation we need to assign pins. We open the dialogue and add a LED component on pin 7. We then assign both available states to this component and submit. 
+Um unseren Code lauffähig zu machen müssen wir noch die Pins zuweisen. Dazu öffnen wir den Dialog und fügen eine LED Komponente an Pin 7 hinzu. Wir weisen beide Zustände dieser Komponente zu und klicken auf Absenden. 
 
 ![](/docs/tutorials/blink-led-assignment.png)
 
-_Full blink example_
+_Pin Zuweisung Beispiel_
 
-### Upload
+### Hochladen
 
-Now copy the code into the Arduino IDE and upload the sketch as detailed in the [Getting Started](/docs/getting-started/) guide. If you connected the LED correctly it should now blink! You successfully programmed an Arduino!
+Jetzt kopieren wir den Code in die Arduino IDE und laden ihn hoch wie beschrieben unter [Erste Schritte](/docs/getting-started/). Wenn du die LED richtig angeschlossen hast sollte sie jetzt blinken. Du hast erfolgreich deinen Arduino programmiert!
 
-
-### Full Example
+### Vollständiges Beispiel
 
 ![](/docs/tutorials/blink-example.png)

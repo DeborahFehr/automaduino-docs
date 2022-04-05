@@ -1,88 +1,88 @@
 ---
-title: "Getting Started"
-linkTitle: "Getting Started"
+title: "Erste Schritte"
+linkTitle: "Erste Schritte"
 weight: 2
 description: >
-  Everything you need to know to get started using Automaduino!
+  Alles was du wissen musst um mit Automaduino loszulegen!
 ---
 
-Want to start coding using Automaduino? Great! Find out about the editor interface and what you need to do to generate code. 
+Du möchtest mit Automaduino programmieren? Super! Hier wird die Benutzeroberfläche des Editors erklärt und wie du Code generieren kannst.
 
-### Overview
+### Überblick
 
 ![](/docs/tutorials/automaduino-overview.png)
 
-_Arduino Editor Interface_
+_Automaduino Editor Übersicht_
 
-The interface consists of the following parts: 
+Der Editor besteht aus folgenden Teilen:
 
-Component Drawer
-: This drawers consists of all component states you can use. To find out more about the components visit the [Components Page](/docs/components/).
+Komponentenmenü
+: In diesem Menü findest du alle Komponenten, die du benutzen kannst. Mehr Informationen über die einzelnen Komponenten findest du auf der [Komponentenseite](/docs/components/).
 
-Start Point
-: The Start Point is the entry for your program. You need to connect it to a state for the code to be able to run.
+Start Punkt
+: Der Startpunkt für dein Programm. Du musst ihn mit einem Zustand verbinden damit dein Code funktioniert.
 
-State
-: A state consists of component and a function. The state executes the function for its assigned component. Find out more about states [here](/docs/concepts/states/).
+Zustand
+: Ein Zustand besteht aus einer Komponente und einer Funktion. Der Zustand führt die Funktion auf dem Arduino aus. Finde mehr über Zustände heraus indem du [hier klickst](/docs/concepts/states/).
 
-Transition
-: A transition connects two states and determines how and when to move from one state to the next. There are multiple different transition types. Find out more about transitions [here](/docs/concepts/transitions/).
+Übergang
+: Ein Übergang verbindet zwei Zustände und bestimmt wie und wann der nächste Block ausgeführt wird. Es gibt mehrere Möglichkeiten für die Übergänge. Finde mehr über Übergänge heraus indem du [hier klickst](/docs/concepts/transitions/).
 
-Pin Assignment
-: This opens the Pin Assignment dialogue. This is necessary as the Arduino needs to know to which pin your component is connected. If there is a state on the canvas that does not have a pin assigned a warning is shown.
+Pin Zuweisung
+: Dieser Button öffnet die Pinzuweisung. Das ist notwendig damit der Arduino weiß an welchem Pin welche Komponente angeschlossen ist. Wenn ein Zustand keinen Pin zugewiesen hat wird eine Warnung angezeigt. 
 
 Code
-: Here the code for the Arduino is shown! The code is automatically generated if you add a state or connect two states. It also works as a text editor if you want to change the code.
+: Hier siehst du den erzeugten Code! Der Code wird immer generiert wenn du einen neuen Zustand hinzufügst oder zwei Zustände verbindest. Du kannst den Code hier auch als Texteditor verwenden. 
 
-Code Style
-: The code style menu allows you to select different code styles for the generator. This for advanced programmers. All [Code Styles](/docs/concepts/code-style/) are explained in this section.
+Code Stil
+: Der Code Stil ermöglicht es dir verschiedene Stile für den generierten Code auszuwählen. Dieses Feature ist für erfahrene Programmierer. Alle [Code Stile](/docs/concepts/code-style/) werden hier erklärt.
 
-### Pin Assignment
+### Pin Zuweisung
 
-If you click on the pin assignment button a dialogue will open. Here you can assign the pins for the components on the board. 
+In diesem Dialog kannst du Pins für die angeschlossenen Komponenten zuweisen.
 
 ![](/docs/tutorials/pin-assignment.png)
-_Pin Assignment example_
+_Beispiel Pinzuweisung_
 
-First add a new component, then select a pin number and a component type. If you have done this successfully you can drag a state from the list at the bottom and add it to the component. 
+Füge zuerst eine neue Komponente hinzu, dann wähle einen Pin aus und welche Komponente angeschlossen werden soll. Sobald du das gemacht hast kannst du von unten einen Zustand zur Komponente ziehen. 
 
-If you're done save your assignments by clicking on the submit button. 
+Sobald du fertig bist klicke auf den Absenden Button.
 
-_Tipp: You can rename your states so you know exactly which state you are assigning!_
+_Tipp: Benenne deine Zustände um damit du genau weißt was du zuweist!_
 
-### Copy Code
+### Code kopieren.
 
-To use your code you have to copy it. You can always select all code in the editor by hand, but there is also a shortcut in the editor menu. 
+Um den Code zu benutzen musst du ihn kipieren. Du kannst allen Code von Hand kopieren oder den Shortcut im Editor verwenden. 
 
 ![](/docs/tutorials/copy-code-editor.png)
-_Copy code using the editor shortcut_
+_Shortcut im Editor zum Kopieren_
 
-If your editor is closed there is a shortcut available at the bottom of the closed drawer. Next to it is also a shortcut to the pin assigment.
+Wenn der Editor zu ist kannst du stattdessen den Button hier verwenden. Außerdem gibt es hier einen Shortcut für die Pinzuweisung. 
 
 ![](/docs/tutorials/copy-code-closed.png)
 
-_Copy code with a closed code editor_
+_Shortcut im geschlossenen Editor zum Kopieren_
 
 
 ### Arduino IDE
 
-To upload a sketch to the Arduino you need to install the [Arduino IDE](https://www.arduino.cc/en/software). 
+Um einen Sketch hochzuladen musst du die [Arduino IDE](https://www.arduino.cc/en/software) verwenden. 
 
-If you've done this successfully, open the IDE and select your board type. The default one is "Arduino Uno". 
+Nachdem du die Software erfolgreich installiert hast, öffne die IDE und wähle dein Board aus. Das ist normalerweise "Arduino Uno". 
 
 ![](/docs/tutorials/board-selection.png)
-_Board selection Menu_
+_Board Auswahl Menü_
 
-Next connect your board via USB to your computer. Then select your board in the port selection. The correct port should have the board name next to it. 
+Als nächstes verbinde dein Board per USB mit deinem Computer. Wähle dein Board in der Port Auswahl. Der richtige Port hat in Klammern den Namen des Board daneben. 
 
 ![](/docs/tutorials/port-selection.png)
-_Port Selection Menu_
+_Port Auswahl Menü_
 
-Then you can copy the code of the Automaduino editor and paste it into the Arduino editor. To upload a sketch press the upload button while your Arduino is connected. That's it!
+Jetzt kannst du den Code aus dem Automaduino Editor kopieren und ihn in der IDE einfügen. Um den Code auf den Arduino zu laden drücke auf den Hochladen Button wenn du das Board per USB verbunden hast. Jetzt ist dein Programm auf dem Arduino! 
 
 ![](/docs/tutorials/upload-button.png)
-_Upload Button_
+_Hochladen Button_
 
 
 ##
-**For a full example head over to the blink page.**
+**Um ein ganzes Beispiel zu sehen schau dir die Blink Seite an!**

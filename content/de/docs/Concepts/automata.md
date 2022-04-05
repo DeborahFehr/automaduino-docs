@@ -1,30 +1,30 @@
 ---
-title: "Automata"
-linkTitle: "Automata"
+title: "Automaten"
+linkTitle: "Automaten"
 weight: 1
 description: >
-  Automata are finite state machines and are used to represent behaviour in Automaduino.
+  Endliche Automaten veranschaulichen ein Verhalten. Die Darstellung in Automaduino basiert auf ihnen.
 ---
 
-### Finite State Machine (Automaton)
+### Endliche Automaten
 
-A finite state machine, also called automaton, is a computation model in which a machine can at any given time hold one state. They perform a predicted sequence of actions based on a given input. States are connected by transitions. The example below is a state machine for a vending machine. 
+Ein endlicher Automat ist ein Berechnungsmodel. Die dargestellte Maschine befindet sich immer in einem Zustand. Je nach der Eingabe führt sie eine bestimmte Reihenfolge an Aktionen aus. Die einzelnen Zustände sind verbunden mit Übergängen. Der unten dargestellte Automat ist ein Beispiel für einen Getränkeautomat. 
 
 ![](https://upload.wikimedia.org/wikipedia/commons/6/64/DFA_M%C3%BCnzen.svg)
 
-_Example [Highbrow](https://upload.wikimedia.org/wikipedia/commons/6/64/DFA_M%C3%BCnzen.svg) CC-by-SA._
+_Beispiel von [Highbrow](https://upload.wikimedia.org/wikipedia/commons/6/64/DFA_M%C3%BCnzen.svg) CC-by-SA._
 
 
-### Importance in Computer Science
+### Bedeutung in der Informatik
 
-State machines are important in computer science. They can be used to model languages. For example parsers are often depicted as state machines. 
+Endliche Automaten spielen eine wichtige Rolle in der Informatik. Sie werden dazu verwendet um Sprachen zu definieren. Beispielsweise Parser werden häufig als Automatne dargestellt. 
 
-They also have more practical uses as in UML statecharts. 
+Sie werden außerdem verwendet in UML Statecharts um Softwareabhängigkeiten zu modelieren. Das ist die bekannteste Anwendung.
 
-### Usage in Automaduino
+### Verwendung in Automaduino
 
-The visual representation of Automaduino is based on state machines. Using sketches we try to determine the behaviour of our Arduino upfront and use this for our visual programming language.
+Die grafische Darstellung in Automaduino basiert auf endlichen Automaten. Wir skizzieren unseren Automaten zuerst auf Papier und übertragen anschließend sein Verhalten in die visuelle Programmiersprache. 
 
 ![](/docs/tutorials/blink-drawing.png)
 
-_Example for a sketch based on a automaton_
+_Beispiel für eine Skizze basierend auf einem Automaten_

@@ -5,7 +5,7 @@ linkTitle: "Workshop"
 weight: 8
 date: 2022-03-29
 description: >
-  Find the workshop material here. 
+  Hier befinden sich die Materialien für den Workshop.  
 ---
 
-Autmaduino was tested in a 3 day workshop in April 2022. For this I created workshop materials including presentations, work sheets and cheat sheets. The material is designed for beginners. **Day 1** introduces the basic Arduino features and introduces Automaduino. **Day 2** features the input and output components and introduces more complex transitions. **Day 3** is about the transition to textbased programming. 
+Autmaduino wurd in einem dreitägigen Workshop im April 2022 getestet. Hierfür wurden Präsentationen, Merkblätte rund Arbeitsblätter erstellt. Alles Material ist für Beginner ausgelegt. **Tag 1** beschäftigt sich mit den wichtigsten Arduino Funktionen. **Tag 2** beschäftigt sich mit Benutzereingaben und Sensoren und erklärt die komplexeren Übergänge. **Tag 3** dreht sich um den Übergang von der visuellen zur textbasierten Programmiersprache. Im **Quiz** kannst du testen was du gelernt hast!

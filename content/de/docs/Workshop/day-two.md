@@ -1,25 +1,25 @@
 ---
-title: "Day Two"
+title: "Tag 2"
 date: 2022-03-29
 weight: 2
 description: >
-  Day two features input components like buttons and sensors. Students will get to know concepts like if-else and conditionals. 
+  Tag 2 beschäftigt sich mit Eingabe Komponenten wie Taster und Sensoren. Die Schüler lernen Übergänge und Konzepte wie if-else kennen. 
 ---
 
-### Presentation
+### Präsentation
 
-* [Presentation](/workshop/de/day-2/Automaduino_Workshop_Tag2.pdf)
+* [Präsentation](/workshop/de/day-2/Automaduino_Workshop_Tag2.pdf)
 
-### Cheat Sheets
+### Merkblätter
 
-* [Cheat Sheet 1](/workshop/de/day-2/Automaduino-Merkblatt-4.pdf)
-* [Cheat Sheet 2](/workshop/de/day-2/Automaduino-Merkblatt-5.pdf)
+* [Merkblatt 1](/workshop/de/day-2/Automaduino-Merkblatt-4.pdf)
+* [Merkblatt 2](/workshop/de/day-2/Automaduino-Merkblatt-5.pdf)
 
-### Work Sheets
+### Arbeitsblätter
 
-* [Work Sheet 1](/workshop/de/day-2/Automaduino-Arbeitsblatt-5.pdf)
-* [Work Sheet 2](/workshop/de/day-2/Automaduino-Arbeitsblatt-6.pdf)
-* [Work Sheet 3](/workshop/de/day-2/Automaduino-Arbeitsblatt-7.pdf)
-* [Work Sheet 4](/workshop/de/day-2/Automaduino-Arbeitsblatt-8.pdf)
-* [Work Sheet 5](/workshop/de/day-2/Automaduino-Arbeitsblatt-9.pdf)
-* [Work Sheet 6](/workshop/de/day-2/Automaduino-Arbeitsblatt-10.pdf)
+* [Arbeitsblatt 1](/workshop/de/day-2/Automaduino-Arbeitsblatt-5.pdf)
+* [Arbeitsblatt 2](/workshop/de/day-2/Automaduino-Arbeitsblatt-6.pdf)
+* [Arbeitsblatt 3](/workshop/de/day-2/Automaduino-Arbeitsblatt-7.pdf)
+* [Arbeitsblatt 4](/workshop/de/day-2/Automaduino-Arbeitsblatt-8.pdf)
+* [Arbeitsblatt 5](/workshop/de/day-2/Automaduino-Arbeitsblatt-9.pdf)
+* [Arbeitsblatt 6](/workshop/de/day-2/Automaduino-Arbeitsblatt-10.pdf)
