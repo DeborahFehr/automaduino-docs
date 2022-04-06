@@ -1,21 +1,21 @@
 ---
-title: "Vibration Sensor"
-linkTitle: "Vibration Sensor"
+title: "Vibrationsensor"
+linkTitle: "Vibrationssensor"
 date: 2022-24-02
 weight: 4
 description: >
-  A vibration sensor detects vibration next to it.
+  Ein Vibrationssensor reagiert auf Vibrationen oder Schütteln. 
 ---
 
 {{< info-box header="Information">}}
 {{< info-text >}}
-  **Type** : Sensor
+  **Typ** : Sensor
 
-  **Mode** : Digital
+  **Modus** : Digital
 
   **Pins** : 0-14
 
-  **Output Values** : 0-1
+  **Ausgabewerte** : 0-1
 
   **Tutorial** : [funduino](https://funduino.de/nr-38-der-vibrationssensor) 
 
@@ -24,45 +24,45 @@ description: >
   {{< info-image >}}
    ![](https://funduinoshop.com/media/image/7c/0b/8d/vs1.jpg)
    
-   _Image by [funduino](https://funduinoshop.com/media/image/7c/0b/8d/vs1.jpg), CC-BY-SA._
+   _Bild von [funduino](https://funduinoshop.com/media/image/7c/0b/8d/vs1.jpg), CC-BY-SA._
 
   {{< /info-image >}}
 
 {{< /info-box >}}
 
-## Circuit Plan
+## Steckplan
 ![](/docs/connectionplan/steckplan_vibrationsensor.png)
    
-   _Plan made with [Fritzing](https://fritzing.org/)._
+   _Erstellt mit [Fritzing](https://fritzing.org/)._
 
-## Functions
+## Funktionen
 
-#### Digital Read
+#### Digital Messen
 
 {{< info-box >}}
 
   {{< info-image >}}
    ![](/docs/components/vibrationsensor.png)
    
-   _Digital Read State_
+   _Digital Messen Zustand_
 
   {{< /info-image >}}
 
 {{< info-text >}}
 
-Reads a digital value.
+Misst einen Wert digital.
   
   {{< tabpane id="1">}}
-  {{< tab header="Functions" >}}
+  {{< tab header="Funktionsmodus" >}}
 void function_0_vibrationSensor(){
 value = digitalRead(pin_0_vibrationSensor);
 function_0_vibrationSensor();
 }
   {{< /tab >}}
-  {{< tab header="Abridged" >}}
+  {{< tab header="Kurzmodus" >}}
 value = digitalRead(pin_0_vibrationSensor);
   {{< /tab >}}
-  {{< tab header="Switch" >}}
+  {{< tab header="Schaltermodus" >}}
 void function_0_vibrationSensor(){
 value = digitalRead(pin_0_vibrationSensor);
 state = 1;

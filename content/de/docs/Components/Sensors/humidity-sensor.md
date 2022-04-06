@@ -1,26 +1,26 @@
 ---
-title: "Humidity Sensor"
-linkTitle: "Humidity Sensor"
+title: "Nässesensor"
+linkTitle: "Nässesensor"
 date: 2022-24-02
 weight: 3
 description: >
-  A humidity sensor measures the humidity of earth or water.
+  Ein Nässesensor misst die Feuchtigkeit in Erde oder in einem Glas.
 ---
 
 {{< info-box header="Information">}}
 {{< info-text >}}
-  **Type** : Sensor
+  **Typ** : Sensor
 
-  **Mode** : Analog
+  **Modus** : Analog
 
   **Pins** : 0-7 (analog)
 
-  **Output Values** : 0-1023
+  **Ausgabewerte** : 0-1023
 
   **Tutorial** : [funduino](https://funduino.de/nr-17-feuchtigkeitssensor) 
 
   {{% pageinfo color="primary" %}}
-**Note:** Only the lower parts can get wet!
+**Anmerkung:** Nur die unteren Teile des Sensors dürfen nass werden!
 {{% /pageinfo %}}
 
   {{< /info-text >}}
@@ -28,45 +28,45 @@ description: >
   {{< info-image >}}
    ![](https://funduinoshop.com/media/image/ed/1c/24/feuchtigkeitssensor-fuer-arduino-mikrocontroller-front.jpg)
    
-   _Image by [funduino](https://funduinoshop.com/media/image/ed/1c/24/feuchtigkeitssensor-fuer-arduino-mikrocontroller-front.jpg), CC-BY-SA._
+   _Bild von [funduino](https://funduinoshop.com/media/image/ed/1c/24/feuchtigkeitssensor-fuer-arduino-mikrocontroller-front.jpg), CC-BY-SA._
 
   {{< /info-image >}}
 
 {{< /info-box >}}
 
-## Circuit Plan
+## Steckplan
 ![](/docs/connectionplan/steckplan_humiditysensor.png)
    
-   _Plan made with [Fritzing](https://fritzing.org/)._
+   _Erstellt mit [Fritzing](https://fritzing.org/)._
 
-## Functions
+## Funktionen
 
-#### Analog Read
+#### Analog Messen
 
 {{< info-box >}}
 
   {{< info-image >}}
    ![](/docs/components/humiditysensor.png)
    
-   _Read Analog State_
+   _Analog Messen Zustand_
 
   {{< /info-image >}}
 
 {{< info-text >}}
 
-Reads a analog value.
+Misst einen Wert analog.
   
   {{< tabpane id="1">}}
-  {{< tab header="Functions" >}}
+  {{< tab header="Funktionsmodus" >}}
 void function_0_humiditySensor(){
 value = analogRead(pin_0_humiditySensor);
 function_0_humiditySensor();
 }
   {{< /tab >}}
-  {{< tab header="Abridged" >}}
+  {{< tab header="Kurzmodus" >}}
 value = analogRead(pin_0_humiditySensor);
   {{< /tab >}}
-  {{< tab header="Switch" >}}
+  {{< tab header="Schaltermodus" >}}
 void function_0_humiditySensor(){
 value = analogRead(pin_0_humiditySensor);
 state = 1;

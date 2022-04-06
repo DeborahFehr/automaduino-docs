@@ -1,9 +1,9 @@
 
 ---
-title: "Sensors"
-linkTitle: "Sensors"
+title: "Sensoren"
+linkTitle: "Sensoren"
 date: 2022-24-02
 weight: 2
 description: >
-  Sensors will gather input from the environment. 
+  Sensoren messen verschiedene Werte aus ihrer Umgebung. 
 ---

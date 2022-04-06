@@ -9,64 +9,60 @@ description: >
 
 {{< info-box header="Information">}}
 {{< info-text >}}
-  **Type** : User Input
+  **Typ** : Nutzereingabe
 
-  **Mode** : Analog
+  **Modus** : Analog
 
   **Pins** : 0-7 (analog)
 
-  **Output Values** : 0-1023
+  **Ausgabewerte** : 0-1023
 
-  **Tutorial** : [funduino](https://funduino.de/nr-17-feuchtigkeitssensor) 
-
-  {{% pageinfo color="primary" %}}
-**Note:** Only the lower parts can get wet!
-{{% /pageinfo %}}
+  **Tutorial** : [funduino](https://funduino.de/nr-7-potentiometer) 
 
   {{< /info-text >}}
 
   {{< info-image >}}
    ![](https://funduinoshop.com/media/image/4f/86/67/8014.jpg)
    
-   _Image by [funduino](https://funduinoshop.com/media/image/4f/86/67/8014.jpg), CC-BY-SA._
+   _Bild von [funduino](https://funduinoshop.com/media/image/4f/86/67/8014.jpg), CC-BY-SA._
 
   {{< /info-image >}}
 
 {{< /info-box >}}
 
-## Circuit Plan
+## Steckplan
 ![](/docs/connectionplan/steckplan_potentiometer.png)
    
-   _Plan made with [Fritzing](https://fritzing.org/)._
+   _Erstellt mit [Fritzing](https://fritzing.org/)._
 
-## Functions
+## Funktionen
 
-#### Await Input
+#### Erwarte Eingabe
 
 {{< info-box >}}
 
   {{< info-image >}}
    ![](/docs/components/potentiometer.png)
    
-   _Await Input State_
+   _Erwarte Eingabe Zustand_
 
   {{< /info-image >}}
 
 {{< info-text >}}
 
-Awaits a analog value.
+Erwartet einen analogen Wert.
   
   {{< tabpane id="1">}}
-  {{< tab header="Functions" >}}
+  {{< tab header="Funktionsmodus" >}}
 void function_0_Potentiometer(){
 value = analogRead(pin_0_potentiometer);
 function_0_Potentiometer();
 }
   {{< /tab >}}
-  {{< tab header="Abridged" >}}
+  {{< tab header="Kurzmodus" >}}
 value = analogRead(pin_0_potentiometer);
   {{< /tab >}}
-  {{< tab header="Switch" >}}
+  {{< tab header="Schaltermodus" >}}
 void function_0_Potentiometer(){
 value = analogRead(pin_0_potentiometer);
 state = 1;

@@ -1,21 +1,21 @@
 ---
-title: "Loudness Sensor"
-linkTitle: "Loudness Sensor"
+title: "Lautstärkesensor"
+linkTitle: "Lautstärkesensor"
 date: 2022-24-02
 weight: 5
 description: >
-  A loudness sensor measures noise.
+  Ein Lautstärkesensor misst Geräusche in seiner Umgebung.
 ---
 
 {{< info-box header="Information">}}
 {{< info-text >}}
-  **Type** : Sensor
+  **Typ** : Sensor
 
-  **Mode** : Analog
+  **Modus** : Analog
 
   **Pins** : 0-7 (analog)
 
-  **Output Values** : 0-1023
+  **Ausgabewerte** : 0-1023
 
   **Tutorial** : [polluxlabs](https://polluxlabs.net/arduino-tutorials/einen-sound-sensor-am-arduino-verwenden/) 
 
@@ -24,45 +24,45 @@ description: >
   {{< info-image >}}
    ![](https://funduinoshop.com/media/image/48/c6/9b/waveshare-sound-modul-v2-mit-lm386-schallsensor-lautstaerkesensor-top.png)
    
-   _Image by [funduino](https://funduinoshop.com/media/image/48/c6/9b/waveshare-sound-modul-v2-mit-lm386-schallsensor-lautstaerkesensor-top.png), CC-BY-SA._
+   _Bild von [funduino](https://funduinoshop.com/media/image/48/c6/9b/waveshare-sound-modul-v2-mit-lm386-schallsensor-lautstaerkesensor-top.png), CC-BY-SA._
 
   {{< /info-image >}}
 
 {{< /info-box >}}
 
-## Circuit Plan
+## Steckplan
 ![](/docs/connectionplan/steckplan_loudnesssensor.png)
    
-   _Plan made with [Fritzing](https://fritzing.org/)._
+   _Erstellt mit [Fritzing](https://fritzing.org/)._
 
-## Functions
+## Funktionen
 
-#### Analog Read
+#### Analog Messen
 
 {{< info-box >}}
 
   {{< info-image >}}
    ![](/docs/components/loudnesssensor.png)
    
-   _Analog Read State_
+   _Analog Messen Zustand_
 
   {{< /info-image >}}
 
 {{< info-text >}}
 
-Reads a analog value.
+Misst einen Wert analog.
   
   {{< tabpane id="1">}}
-  {{< tab header="Functions" >}}
+  {{< tab header="Funktionsmodus" >}}
 void function_0_Lautst_rke_sensor(){
 value = analogRead(pin_0_loudnessSensor);
 function_0_Lautst_rke_sensor();
 }
   {{< /tab >}}
-  {{< tab header="Abridged" >}}
+  {{< tab header="Kurzmodus" >}}
 value = analogRead(pin_0_loudnessSensor);
   {{< /tab >}}
-  {{< tab header="Switch" >}}
+  {{< tab header="Schaltermodus" >}}
 void function_0_Lautst_rke_sensor(){
 value = analogRead(pin_0_loudnessSensor);
 state = 1;

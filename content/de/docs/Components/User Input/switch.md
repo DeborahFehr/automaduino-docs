@@ -1,26 +1,26 @@
 ---
-title: "Switch"
-linkTitle: "Switch"
+title: "Schalter"
+linkTitle: "Schalter"
 date: 2022-24-02
 weight: 2
 description: >
-  A switch works similar to a button to detect an input. 
+  Ein Schalter ähnelt einem Taster, behält seinen Zustand aber bei.
 ---
 
 {{< info-box header="Information">}}
 {{< info-text >}}
-  **Type** : User Input
+  **Typ** : Nutzereingabe
 
-  **Mode** : Digital
+  **Modus** : Digital
 
   **Pins** : 0-14
 
-  **Output Values** : 0-1
+  **Ausgabewerte** : 0-1
 
   **Tutorial** : [funduino](https://funduino.de/nr-5-taster-am-arduino) 
 
   {{% pageinfo color="primary" %}}
-**Note:** A switch works the same way as a button but you can always the the current status.
+**Anmerkung:** Ein Schalter funktioniert wie ein Taster, behält seinen Zustand aber bei.
 {{% /pageinfo %}}
 
   {{< /info-text >}}
@@ -28,45 +28,45 @@ description: >
   {{< info-image >}}
    ![](https://funduinoshop.com/media/image/56/75/f9/schalter-mit-einer-position-2-54mm-front2.jpg)
    
-   _Image by [funduino](https://funduinoshop.com/media/image/56/75/f9/schalter-mit-einer-position-2-54mm-front2.jpg), CC-BY-SA._
+   _Bild von [funduino](https://funduinoshop.com/media/image/56/75/f9/schalter-mit-einer-position-2-54mm-front2.jpg), CC-BY-SA._
 
   {{< /info-image >}}
 
 {{< /info-box >}}
 
-## Circuit Plan
+## Steckplan
 ![](/docs/connectionplan/steckplan_switch.png)
    
-   _Plan made with [Fritzing](https://fritzing.org/)._
+   _Erstellt mit [Fritzing](https://fritzing.org/)._
 
-## Functions
+## Funktionen
 
-#### Await Input
+#### Erwarte Eingabe
 
 {{< info-box >}}
 
   {{< info-image >}}
    ![](/docs/components/switch.png)
    
-   _Await Input State_
+   _Erwarte Eingabe Zustand_
 
   {{< /info-image >}}
 
 {{< info-text >}}
 
-Awaits a digital value.
+Erwartet einen digitalen Wert.
   
   {{< tabpane id="1">}}
-  {{< tab header="Functions" >}}
+  {{< tab header="Funktionsmodus" >}}
 void function_0_Schalter(){
 value = digitalRead(pin_0_switch);
 function_0_Schalter();
 }
   {{< /tab >}}
-  {{< tab header="Abridged" >}}
+  {{< tab header="Kurzmodus" >}}
 value = digitalRead(pin_0_switch);
   {{< /tab >}}
-  {{< tab header="Switch" >}}
+  {{< tab header="Schaltermodus" >}}
 void function_0_Schalter(){
 value = digitalRead(pin_0_switch);
 state = 1;

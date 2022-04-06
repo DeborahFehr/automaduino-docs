@@ -1,21 +1,21 @@
 ---
-title: "Button"
-linkTitle: "Button"
+title: "Taster"
+linkTitle: "Taster"
 date: 2022-24-02
 weight: 1
 description: >
-  A button will detect if a user presses it.
+  Ein Taster reagiert darauf wenn ein Nutzer ihn drückt. 
 ---
 
 {{< info-box header="Information">}}
 {{< info-text >}}
-  **Type** : User Input
+  **Typ** : Nutzereingabe
 
-  **Mode** : Digital
+  **Modus** : Digital
 
   **Pins** : 0-14
 
-  **Output Values** : 0-1
+  **Ausgabewerte** : 0-1
 
   **Tutorial** : [funduino](https://funduino.de/nr-5-taster-am-arduino) 
 
@@ -24,45 +24,45 @@ description: >
   {{< info-image >}}
    ![](https://funduinoshop.com/media/image/19/1b/4e/4x-kurzhubtaster-2-pins-12x12x6mm-arduino.jpg)
    
-   _Image by [funduino](https://funduinoshop.com/media/image/19/1b/4e/4x-kurzhubtaster-2-pins-12x12x6mm-arduino.jpg), CC-BY-SA._
+   _Bild von [funduino](https://funduinoshop.com/media/image/19/1b/4e/4x-kurzhubtaster-2-pins-12x12x6mm-arduino.jpg), CC-BY-SA._
 
   {{< /info-image >}}
 
 {{< /info-box >}}
 
-## Circuit Plan
+## Steckplan
 ![](/docs/connectionplan/steckplan_button.png)
    
-   _Plan made with [Fritzing](https://fritzing.org/)._
+   _Erstellt mit [Fritzing](https://fritzing.org/)._
 
-## Functions
+## Funktionen
 
-#### Await Input
+#### Erwarte Eingabe
 
 {{< info-box >}}
 
   {{< info-image >}}
    ![](/docs/components/button.png)
    
-   _Await Input State_
+   _Erwarte Eingabe Zustand_
 
   {{< /info-image >}}
 
 {{< info-text >}}
 
-Awaits a digital value.
+Erwartet einen digitalen Wert.
   
   {{< tabpane id="1">}}
-  {{< tab header="Functions" >}}
+  {{< tab header="Funktionsmodus" >}}
 void function_0_button(){
 value = digitalRead(pin_0_button);
 function_0_button();
 }
   {{< /tab >}}
-  {{< tab header="Abridged" >}}
+  {{< tab header="Kurzmodus" >}}
 value = digitalRead(pin_0_button);
   {{< /tab >}}
-  {{< tab header="Switch" >}}
+  {{< tab header="Schaltermodus" >}}
 void function_0_button(){
 value = digitalRead(pin_0_button);
 state = 1;

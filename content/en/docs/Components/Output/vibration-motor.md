@@ -48,7 +48,7 @@ description: >
 
 {{< info-text >}}
 
-Switches the component off.
+Switches the component on.
   
   {{< tabpane id="1">}}
   {{< tab header="Functions" >}}

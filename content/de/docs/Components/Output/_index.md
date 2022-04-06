@@ -1,9 +1,9 @@
 
 ---
-title: "Output"
-linkTitle: "Output"
+title: "Ausgabe"
+linkTitle: "Ausgabe"
 date: 2022-24-02
 weight: 1
 description: >
-  Output components like LEDs or buzzers do not take an input but instead manipulate their environment.
+  Ausgabe Komponenten wie LEDs oder Summer erhalten keine Eingabe, sondern beeinflussen stattdessen ihre Umgebung.
 ---

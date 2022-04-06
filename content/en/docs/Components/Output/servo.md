@@ -4,7 +4,7 @@ linkTitle: "Servo"
 date: 2022-24-02
 weight: 5
 description: >
-  A motion sensor detects motion within a certain range.
+  A servo is a small motor that can be turned.
 ---
 
 {{< info-box header="Information">}}

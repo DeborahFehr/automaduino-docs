@@ -4,25 +4,25 @@ linkTitle: "Servo"
 date: 2022-24-02
 weight: 5
 description: >
-  A motion sensor detects motion within a certain range.
+  Ein Servo ist ein kleiner Motor, der gedreht werden kann.
 ---
 
 {{< info-box header="Information">}}
 {{< info-text >}}
-  **Type** : Output
+  **Typ** : Ausgabe
 
-  **Mode** : Servo Library
+  **Modus** : Servo Bibilothek
 
   **Pins** : 0-14
 
   **Tutorial** : [funduino](https://funduino.de/nr-12-servo-ansteuern) 
   
   {{% pageinfo color="primary" %}}
-**Library:** You need to import the servo library to use this component!
+**Bibliothek:** Du musst die Servo Bibliothek importieren um diese Komponente zu verwenden!
 {{% /pageinfo %}}
 
   {{% pageinfo color="primary" %}}
-**Note:** Use with delay as the rotation takes some time. 
+**Anmerkung:** Verwende die Zustände immer mit einer kurzen Verzögerung, da die Drehung Zeit braucht.
 {{% /pageinfo %}}
 
   {{< /info-text >}}
@@ -30,49 +30,49 @@ description: >
   {{< info-image >}}
    ![](https://funduinoshop.com/media/image/a1/g0/17/25047.jpg)
    
-   _Image by [funduino](https://funduinoshop.com/media/image/a1/g0/17/25047.jpg), CC-BY-SA._
+   _Bild von [funduino](https://funduinoshop.com/media/image/a1/g0/17/25047.jpg), CC-BY-SA._
 
   {{< /info-image >}}
 
 {{< /info-box >}}
 
-## Circuit Plan
+## Steckplan
 ![](/docs/connectionplan/steckplan_servo.png)
    
-   _Plan made with [Fritzing](https://fritzing.org/)._
+   _Erstellt mit [Fritzing](https://fritzing.org/)._
 
-## Functions
+## Funktionen
 
-#### Degree
+#### Grad
 
 {{< info-box >}}
 
   {{< info-image >}}
    ![](/docs/components/servo_0.png)
    
-   _Turn servo to 0 degree_
+   _Dreht den Servo auf 0 Grad_
 
    ![](/docs/components/servo_180.png)
    
-   _Turn servo to 180 degree_
+   _Dreht den Servo auf 180 Grad_
 
   {{< /info-image >}}
 
 {{< info-text >}}
 
-This function will turn the servo to the degree specified in the function name. 
+Diese Funktion dreht den Servo auf die angegebene Gradzahl.
   
   {{< tabpane id="1">}}
-  {{< tab header="Functions" >}}
+  {{< tab header="Funktionsmodus" >}}
 void function_1_servo(){
 servo_0.write(0);
 function_1_servo();
 }
   {{< /tab >}}
-  {{< tab header="Abridged" >}}
+  {{< tab header="Kurzmodus" >}}
 servo_0.write(0);
   {{< /tab >}}
-  {{< tab header="Switch" >}}
+  {{< tab header="Schaltermodus" >}}
 void function_0_servo(){
 servo_0.write(0);
 state = 1;

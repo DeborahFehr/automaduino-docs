@@ -1,24 +1,24 @@
 ---
-title: "Buzzer"
-linkTitle: "Buzzer"
+title: "Summer"
+linkTitle: "Summer"
 date: 2022-24-02
 weight: 2
 description: >
-  A buzzer will emit a sound. 
+  Ein Summer macht ein Geräusch. 
 ---
 
 {{< info-box header="Information">}}
 {{< info-text >}}
-  **Type** : Output
+  **Typ** : Ausgabe
 
-  **Mode** : Digital
+  **Modus** : Digital
 
   **Pins** : 0-14
 
   **Tutorial** : [funduino](https://funduino.de/nr-3-licht-und-ton) 
 
 {{% pageinfo color="primary" %}}
-**Note:** Use tone(buzzer, 1000) to set the tone height. 
+**Anmerkung:** Nutz den Befehl tone(buzzer, 1000) um eine Tonhöhe festzulegen. 
 {{% /pageinfo %}}
 
   {{< /info-text >}}
@@ -26,45 +26,45 @@ description: >
   {{< info-image >}}
    ![](https://funduinoshop.com/media/image/b2/76/8b/Piezo.png)
    
-   _Image by [funduino](https://funduinoshop.com/media/image/b2/76/8b/Piezo.png), CC-BY-SA._
+   _Bild von [funduino](https://funduinoshop.com/media/image/b2/76/8b/Piezo.png), CC-BY-SA._
 
   {{< /info-image >}}
 
 {{< /info-box >}}
 
-## Circuit Plan
+## Steckplan
 ![](/docs/connectionplan/steckplan_buzzer.png)
    
-   _Plan made with [Fritzing](https://fritzing.org/)._
+   _Erstellt mit [Fritzing](https://fritzing.org/)._
 
-## Functions
+## Funktionen
 
-#### On
+#### An
 
 {{< info-box >}}
 
   {{< info-image >}}
    ![](/docs/components/buzzer_on.png)
    
-   _On State_
+   _An Zustand_
 
   {{< /info-image >}}
 
 {{< info-text >}}
 
-Switches the component off.
+Schaltet die Komponente an.
   
   {{< tabpane id="1">}}
-  {{< tab header="Functions" >}}
+  {{< tab header="Funktionsmodus" >}}
 void function_0_buzzer(){
 digitalWrite(pin_0_buzzer, HIGH);
 function_0_buzzer();
 }
   {{< /tab >}}
-  {{< tab header="Abridged" >}}
+  {{< tab header="Kurzmodus" >}}
 digitalWrite(pin_0_buzzer, HIGH);
   {{< /tab >}}
-  {{< tab header="Switch" >}}
+  {{< tab header="Schaltermodus" >}}
 void function_0_buzzer(){
 digitalWrite(pin_0_buzzer, HIGH);
 state = 1;
@@ -76,32 +76,32 @@ state = 1;
 
 {{< /info-box >}}
 
-#### Off
+#### Aus
 
 {{< info-box >}}
 
   {{< info-image >}}
    ![](/docs/components/buzzer_off.png)
    
-   _Off State_
+   _Aus Zustand_
 
   {{< /info-image >}}
 
 {{< info-text >}}
 
-  Switches the component off.
+  Schaltet die Komponente aus.
   
   {{< tabpane id="2">}}
-  {{< tab header="Functions" >}}
+  {{< tab header="Funktionsmodus" >}}
 void function_0_buzzer(){
 digitalWrite(pin_0_buzzer, LOW);
 function_0_buzzer();
 }
   {{< /tab >}}
-  {{< tab header="Abridged" >}}
+  {{< tab header="Kurzmodus" >}}
 digitalWrite(pin_0_buzzer, LOW);
   {{< /tab >}}
-  {{< tab header="Switch" >}}
+  {{< tab header="Schaltermodus" >}}
 void function_0_buzzer(){
 digitalWrite(pin_0_buzzer, LOW);
 state = 1;

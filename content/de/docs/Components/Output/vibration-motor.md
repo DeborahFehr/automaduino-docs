@@ -1,17 +1,17 @@
 ---
-title: "Vibration Motor"
-linkTitle: "Vibration Motor"
+title: "Vibrationsmotor"
+linkTitle: "Vibrationsmotor"
 date: 2022-24-02
 weight: 3
 description: >
-  A vibration motor will vibrate and is for example used in a smartphone.
+  Ein Vibrationsmotor vibriert. Er ist beispielsweise in einem Smartphone verbaut. 
 ---
 
 {{< info-box header="Information">}}
 {{< info-text >}}
-  **Type** : Output
+  **Typ** : Ausgabe
 
-  **Mode** : Digital
+  **Modus** : Digital
 
   **Pins** : 0-14
 
@@ -22,45 +22,45 @@ description: >
   {{< info-image >}}
    ![](https://funduinoshop.com/media/image/c8/a7/5a/vibrationsmotor-multiple-front.jpg)
    
-   _Image by [funduino](https://funduinoshop.com/media/image/c8/a7/5a/vibrationsmotor-multiple-front.jpg), CC-BY-SA._
+   _Bild von [funduino](https://funduinoshop.com/media/image/c8/a7/5a/vibrationsmotor-multiple-front.jpg), CC-BY-SA._
 
   {{< /info-image >}}
 
 {{< /info-box >}}
 
-## Circuit Plan
+## Steckplan
 ![](/docs/connectionplan/steckplan_vibrationmotor.png)
    
-   _Plan made with [Fritzing](https://fritzing.org/)._
+   _Erstellt mit [Fritzing](https://fritzing.org/)._
 
-## Functions
+## Funktionen
 
-#### On
+#### An
 
 {{< info-box >}}
 
   {{< info-image >}}
    ![](/docs/components/vibrationmotor_on.png)
    
-   _On State_
+   _An Zustand_
 
   {{< /info-image >}}
 
 {{< info-text >}}
 
-Switches the component off.
+Schaltet die Komponente an.
   
   {{< tabpane id="1">}}
-  {{< tab header="Functions" >}}
+  {{< tab header="Funktionsmodus" >}}
 void function_0_vibrationMotor(){
 digitalWrite(pin_0_vibrationMotor, HIGH);
 function_0_vibrationMotor();
 }
   {{< /tab >}}
-  {{< tab header="Abridged" >}}
+  {{< tab header="Kurzmodus" >}}
 digitalWrite(pin_0_vibrationMotor, HIGH);
   {{< /tab >}}
-  {{< tab header="Switch" >}}
+  {{< tab header="Schaltermodus" >}}
 void function_0_vibrationMotor(){
 digitalWrite(pin_0_vibrationMotor, HIGH);
 state = 1;
@@ -72,32 +72,32 @@ state = 1;
 
 {{< /info-box >}}
 
-#### Off
+#### Aus
 
 {{< info-box >}}
 
   {{< info-image >}}
    ![](/docs/components/vibrationmotor_off.png)
    
-   _Off State_
+   _Aus Zustand_
 
   {{< /info-image >}}
 
 {{< info-text >}}
 
-  Switches the component off.
+  Schaltet die Komponente aus.
   
   {{< tabpane id="2">}}
-  {{< tab header="Functions" >}}
+  {{< tab header="Funktionsmodus" >}}
 void function_0_vibrationMotor(){
 digitalWrite(pin_0_vibrationMotor, LOW);
 function_0_vibrationMotor();
 }
   {{< /tab >}}
-  {{< tab header="Abridged" >}}
+  {{< tab header="Kurzmodus" >}}
 digitalWrite(pin_0_vibrationMotor, LOW);
   {{< /tab >}}
-  {{< tab header="Switch" >}}
+  {{< tab header="Schaltermodus" >}}
 void function_0_vibrationMotor(){
 digitalWrite(pin_0_vibrationMotor, LOW);
 state = 1;

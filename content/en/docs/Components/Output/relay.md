@@ -4,7 +4,7 @@ linkTitle: "Relay"
 date: 2022-24-02
 weight: 4
 description: >
-  A motion sensor detects motion within a certain range.
+  A relay can be used to turn another electrical component on and off.
 ---
 
 {{< info-box header="Information">}}
@@ -52,7 +52,7 @@ description: >
 
 {{< info-text >}}
 
-Switches the component off.
+Switches the component on.
   
   {{< tabpane id="1">}}
   {{< tab header="Functions" >}}

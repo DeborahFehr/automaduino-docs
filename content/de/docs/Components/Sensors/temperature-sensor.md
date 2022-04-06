@@ -1,26 +1,26 @@
 ---
-title: "Temperature Sensor"
-linkTitle: "Temperature Sensor"
+title: "Temperatursensor"
+linkTitle: "Temperatursensor"
 date: 2022-24-02
 weight: 2
 description: >
-  A temperature sensor measures the current temperature in the air.
+  Ein Temperatursensor misst die aktuelle Lufttemperatur.
 ---
 
 {{< info-box header="Information">}}
 {{< info-text >}}
-  **Type** : Sensor
+  **Typ** : Sensor
 
-  **Mode** : Analog
+  **Modus** : Analog
 
   **Pins** : 0-7 (analog)
 
-  **Output Values** : Value in Celsius (0-40)
+  **Ausgabewerte** : Wert in Celsius (0-40)
 
   **Tutorial** : [funduino](https://funduino.de/nr-10-temperatur-messen) 
 
   {{% pageinfo color="primary" %}}
-**Note:** The value needs to be transformed to celsius! See code below.
+**Anmerkung:** Der Messwert muss noch in Celsius umgerechnet werden! Siehe Beispielcode unten.
 {{% /pageinfo %}}
 
   {{< /info-text >}}
@@ -28,45 +28,45 @@ description: >
   {{< info-image >}}
    ![](https://funduinoshop.com/media/image/ec/1e/17/temperatursensor-tmp36gt9z-arduino.jpg)
    
-   _Image by [funduino](https://funduinoshop.com/media/image/ec/1e/17/temperatursensor-tmp36gt9z-arduino.jpg), CC-BY-SA._
+   _Bild von [funduino](https://funduinoshop.com/media/image/ec/1e/17/temperatursensor-tmp36gt9z-arduino.jpg), CC-BY-SA._
 
   {{< /info-image >}}
 
 {{< /info-box >}}
 
-## Circuit Plan
+## Steckplan
 ![](/docs/connectionplan/steckplan_temperaturesensor.png)
    
-   _Plan made with [Fritzing](https://fritzing.org/)._
+   _Erstellt mit [Fritzing](https://fritzing.org/)._
 
-## Functions
+## Funktionen
 
-#### Analog Read
+#### Analog Messen
 
 {{< info-box >}}
 
   {{< info-image >}}
    ![](/docs/components/temperaturesensor.png)
    
-   _Analog Read State_
+   _Analog Messen Zustand_
 
   {{< /info-image >}}
 
 {{< info-text >}}
 
-Reads a analog value and transforms it to Celsius.
+Misst einen Wert analog und gibt ihn in Celsius aus.
   
   {{< tabpane id="1">}}
-  {{< tab header="Functions" >}}
+  {{< tab header="Funktionsmodus" >}}
 void function_0_temperatureSensor(){
 value = map(analogRead(pin_0_temperatureSensor), 0, 410, -50, 150);
 function_0_temperatureSensor();
 }
   {{< /tab >}}
-  {{< tab header="Abridged" >}}
+  {{< tab header="Kurzmodus" >}}
 value = map(analogRead(pin_1_temperatureSensor), 0, 410, -50, 150);
   {{< /tab >}}
-  {{< tab header="Switch" >}}
+  {{< tab header="Schaltermodus" >}}
 void function_0_temperatureSensor(){
 value = map(analogRead(pin_1_temperatureSensor), 0, 410, -50, 150);
 state = 1;

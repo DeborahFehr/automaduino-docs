@@ -17,11 +17,7 @@ description: >
 
   **Output Values** : 0-1023
 
-  **Tutorial** : [funduino](https://funduino.de/nr-17-feuchtigkeitssensor) 
-
-  {{% pageinfo color="primary" %}}
-**Note:** Only the lower parts can get wet!
-{{% /pageinfo %}}
+  **Tutorial** : [funduino](https://funduino.de/nr-7-potentiometer) 
 
   {{< /info-text >}}
 
