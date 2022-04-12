@@ -59,16 +59,16 @@ Erwartet einen digitalen Wert.
   {{< tabpane id="1">}}
   {{< tab header="Funktionsmodus" >}}
 void function_0_Schalter(){
-value = digitalRead(pin_0_switch);
+int value = digitalRead(pin_0_switch);
 function_0_Schalter();
 }
   {{< /tab >}}
   {{< tab header="Kurzmodus" >}}
-value = digitalRead(pin_0_switch);
+int value = digitalRead(pin_0_switch);
   {{< /tab >}}
   {{< tab header="Schaltermodus" >}}
 void function_0_Schalter(){
-value = digitalRead(pin_0_switch);
+int value = digitalRead(pin_0_switch);
 state = 1;
 }
   {{< /tab >}}

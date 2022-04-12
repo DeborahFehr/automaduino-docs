@@ -55,16 +55,16 @@ Awaits a analog value.
   {{< tabpane id="1">}}
   {{< tab header="Functions" >}}
 void function_0_Potentiometer(){
-value = analogRead(pin_0_potentiometer);
+int value = analogRead(pin_0_potentiometer);
 function_0_Potentiometer();
 }
   {{< /tab >}}
   {{< tab header="Abridged" >}}
-value = analogRead(pin_0_potentiometer);
+int value = analogRead(pin_0_potentiometer);
   {{< /tab >}}
   {{< tab header="Switch" >}}
 void function_0_Potentiometer(){
-value = analogRead(pin_0_potentiometer);
+int value = analogRead(pin_0_potentiometer);
 state = 1;
 }
   {{< /tab >}}

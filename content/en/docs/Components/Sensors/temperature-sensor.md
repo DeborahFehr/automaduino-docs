@@ -59,16 +59,16 @@ Reads a analog value and transforms it to Celsius.
   {{< tabpane id="1">}}
   {{< tab header="Functions" >}}
 void function_0_temperatureSensor(){
-value = map(analogRead(pin_0_temperatureSensor), 0, 410, -50, 150);
+int value = map(analogRead(pin_0_temperatureSensor), 0, 410, -50, 150);
 function_0_temperatureSensor();
 }
   {{< /tab >}}
   {{< tab header="Abridged" >}}
-value = map(analogRead(pin_1_temperatureSensor), 0, 410, -50, 150);
+int value = map(analogRead(pin_1_temperatureSensor), 0, 410, -50, 150);
   {{< /tab >}}
   {{< tab header="Switch" >}}
 void function_0_temperatureSensor(){
-value = map(analogRead(pin_1_temperatureSensor), 0, 410, -50, 150);
+int value = map(analogRead(pin_1_temperatureSensor), 0, 410, -50, 150);
 state = 1;
 }
   {{< /tab >}}

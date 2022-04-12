@@ -112,16 +112,19 @@ Receive a ultrasonic wave.
   {{< tabpane id="2">}}
   {{< tab header="Functions" >}}
 void function_1_Ultraschall_messer(){
-value = (pulseIn(pin_2_ultrasonicRanger, HIGH)/2) * 0.03432;
+long pulseValueFromWave = pulseIn(pin_2_ultrasonicRanger, HIGH);
+long value = (pulseValueFromWave/2) * 0.03432;
 function_1_Ultraschall_messer();
 }
   {{< /tab >}}
   {{< tab header="Abridged" >}}
-value = (pulseIn(pin_2_ultrasonicRanger, HIGH)/2) * 0.03432;
+long pulseValueFromWave = pulseIn(pin_2_ultrasonicRanger, HIGH);
+long value = (pulseValueFromWave/2) * 0.03432;
   {{< /tab >}}
   {{< tab header="Switch" >}}
 void function_1_Ultraschall_messer(){
-value = (pulseIn(pin_2_ultrasonicRanger, HIGH)/2) * 0.03432;
+long pulseValueFromWave = pulseIn(pin_2_ultrasonicRanger, HIGH);
+long value = (pulseValueFromWave/2) * 0.03432;
 state = 1; 
 }
   {{< /tab >}}

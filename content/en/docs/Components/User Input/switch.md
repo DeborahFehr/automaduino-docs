@@ -59,16 +59,16 @@ Awaits a digital value.
   {{< tabpane id="1">}}
   {{< tab header="Functions" >}}
 void function_0_Schalter(){
-value = digitalRead(pin_0_switch);
+int value = digitalRead(pin_0_switch);
 function_0_Schalter();
 }
   {{< /tab >}}
   {{< tab header="Abridged" >}}
-value = digitalRead(pin_0_switch);
+int value = digitalRead(pin_0_switch);
   {{< /tab >}}
   {{< tab header="Switch" >}}
 void function_0_Schalter(){
-value = digitalRead(pin_0_switch);
+int value = digitalRead(pin_0_switch);
 state = 1;
 }
   {{< /tab >}}

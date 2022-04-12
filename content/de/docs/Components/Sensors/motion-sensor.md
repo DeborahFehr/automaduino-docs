@@ -55,16 +55,16 @@ Misst einen Wert digital.
   {{< tabpane id="1">}}
   {{< tab header="Funktionsmodus" >}}
 void function_0_motionSensor(){
-value = digitalRead(pin_0_motionSensor);
+int value = digitalRead(pin_0_motionSensor);
 function_0_motionSensor();
 }
   {{< /tab >}}
   {{< tab header="Kurzmodus" >}}
-value = digitalRead(pin_0_motionSensor);
+int value = digitalRead(pin_0_motionSensor);
   {{< /tab >}}
   {{< tab header="Schaltermodus" >}}
 void function_0_motionSensor(){
-value = digitalRead(pin_0_motionSensor);
+int value = digitalRead(pin_0_motionSensor);
 state = 1;
 }
   {{< /tab >}}

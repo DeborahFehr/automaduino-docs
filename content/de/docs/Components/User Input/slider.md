@@ -55,16 +55,16 @@ Erwartet einen analogen Wert.
   {{< tabpane id="1">}}
   {{< tab header="Funktionsmodus" >}}
 void function_0_Schieberegler(){
-value = analogRead(pin_0_slider);
+int value = analogRead(pin_0_slider);
 function_0_Schieberegler();
 }
   {{< /tab >}}
   {{< tab header="Kurzmodus" >}}
-value = analogRead(pin_0_slider);
+int value = analogRead(pin_0_slider);
   {{< /tab >}}
   {{< tab header="Schaltermodus" >}}
 void function_0_Schieberegler(){
-value = analogRead(pin_0_slider);
+int value = analogRead(pin_0_slider);
 state = 1;
 }
   {{< /tab >}}

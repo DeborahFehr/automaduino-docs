@@ -55,16 +55,16 @@ Erwartet einen analogen Wert.
   {{< tabpane id="1">}}
   {{< tab header="Funktionsmodus" >}}
 void function_0_Potentiometer(){
-value = analogRead(pin_0_potentiometer);
+int value = analogRead(pin_0_potentiometer);
 function_0_Potentiometer();
 }
   {{< /tab >}}
   {{< tab header="Kurzmodus" >}}
-value = analogRead(pin_0_potentiometer);
+int value = analogRead(pin_0_potentiometer);
   {{< /tab >}}
   {{< tab header="Schaltermodus" >}}
 void function_0_Potentiometer(){
-value = analogRead(pin_0_potentiometer);
+int value = analogRead(pin_0_potentiometer);
 state = 1;
 }
   {{< /tab >}}

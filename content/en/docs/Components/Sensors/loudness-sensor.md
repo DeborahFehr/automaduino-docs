@@ -55,16 +55,16 @@ Reads a analog value.
   {{< tabpane id="1">}}
   {{< tab header="Functions" >}}
 void function_0_Lautst_rke_sensor(){
-value = analogRead(pin_0_loudnessSensor);
+int value = analogRead(pin_0_loudnessSensor);
 function_0_Lautst_rke_sensor();
 }
   {{< /tab >}}
   {{< tab header="Abridged" >}}
-value = analogRead(pin_0_loudnessSensor);
+int value = analogRead(pin_0_loudnessSensor);
   {{< /tab >}}
   {{< tab header="Switch" >}}
 void function_0_Lautst_rke_sensor(){
-value = analogRead(pin_0_loudnessSensor);
+int value = analogRead(pin_0_loudnessSensor);
 state = 1;
 }
   {{< /tab >}}

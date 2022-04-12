@@ -55,16 +55,16 @@ Misst einen Wert analog.
   {{< tabpane id="1">}}
   {{< tab header="Funktionsmodus" >}}
 void function_0_Lautst_rke_sensor(){
-value = analogRead(pin_0_loudnessSensor);
+int value = analogRead(pin_0_loudnessSensor);
 function_0_Lautst_rke_sensor();
 }
   {{< /tab >}}
   {{< tab header="Kurzmodus" >}}
-value = analogRead(pin_0_loudnessSensor);
+int value = analogRead(pin_0_loudnessSensor);
   {{< /tab >}}
   {{< tab header="Schaltermodus" >}}
 void function_0_Lautst_rke_sensor(){
-value = analogRead(pin_0_loudnessSensor);
+int value = analogRead(pin_0_loudnessSensor);
 state = 1;
 }
   {{< /tab >}}

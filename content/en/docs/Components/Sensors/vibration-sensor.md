@@ -55,16 +55,16 @@ Reads a digital value.
   {{< tabpane id="1">}}
   {{< tab header="Functions" >}}
 void function_0_vibrationSensor(){
-value = digitalRead(pin_0_vibrationSensor);
+int value = digitalRead(pin_0_vibrationSensor);
 function_0_vibrationSensor();
 }
   {{< /tab >}}
   {{< tab header="Abridged" >}}
-value = digitalRead(pin_0_vibrationSensor);
+int value = digitalRead(pin_0_vibrationSensor);
   {{< /tab >}}
   {{< tab header="Switch" >}}
 void function_0_vibrationSensor(){
-value = digitalRead(pin_0_vibrationSensor);
+int value = digitalRead(pin_0_vibrationSensor);
 state = 1;
 }
   {{< /tab >}}

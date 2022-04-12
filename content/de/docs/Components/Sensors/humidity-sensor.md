@@ -59,16 +59,16 @@ Misst einen Wert analog.
   {{< tabpane id="1">}}
   {{< tab header="Funktionsmodus" >}}
 void function_0_humiditySensor(){
-value = analogRead(pin_0_humiditySensor);
+int value = analogRead(pin_0_humiditySensor);
 function_0_humiditySensor();
 }
   {{< /tab >}}
   {{< tab header="Kurzmodus" >}}
-value = analogRead(pin_0_humiditySensor);
+int value = analogRead(pin_0_humiditySensor);
   {{< /tab >}}
   {{< tab header="Schaltermodus" >}}
 void function_0_humiditySensor(){
-value = analogRead(pin_0_humiditySensor);
+int value = analogRead(pin_0_humiditySensor);
 state = 1;
 }
   {{< /tab >}}

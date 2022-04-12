@@ -55,16 +55,16 @@ Awaits a analog value.
   {{< tabpane id="1">}}
   {{< tab header="Functions" >}}
 void function_0_Schieberegler(){
-value = analogRead(pin_0_slider);
+int value = analogRead(pin_0_slider);
 function_0_Schieberegler();
 }
   {{< /tab >}}
   {{< tab header="Abridged" >}}
-value = analogRead(pin_0_slider);
+int value = analogRead(pin_0_slider);
   {{< /tab >}}
   {{< tab header="Switch" >}}
 void function_0_Schieberegler(){
-value = analogRead(pin_0_slider);
+int value = analogRead(pin_0_slider);
 state = 1;
 }
   {{< /tab >}}

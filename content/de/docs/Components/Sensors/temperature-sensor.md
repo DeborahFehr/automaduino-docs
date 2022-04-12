@@ -59,16 +59,16 @@ Misst einen Wert analog und gibt ihn in Celsius aus.
   {{< tabpane id="1">}}
   {{< tab header="Funktionsmodus" >}}
 void function_0_temperatureSensor(){
-value = map(analogRead(pin_0_temperatureSensor), 0, 410, -50, 150);
+int value = map(analogRead(pin_0_temperatureSensor), 0, 410, -50, 150);
 function_0_temperatureSensor();
 }
   {{< /tab >}}
   {{< tab header="Kurzmodus" >}}
-value = map(analogRead(pin_1_temperatureSensor), 0, 410, -50, 150);
+int value = map(analogRead(pin_1_temperatureSensor), 0, 410, -50, 150);
   {{< /tab >}}
   {{< tab header="Schaltermodus" >}}
 void function_0_temperatureSensor(){
-value = map(analogRead(pin_1_temperatureSensor), 0, 410, -50, 150);
+int value = map(analogRead(pin_1_temperatureSensor), 0, 410, -50, 150);
 state = 1;
 }
   {{< /tab >}}

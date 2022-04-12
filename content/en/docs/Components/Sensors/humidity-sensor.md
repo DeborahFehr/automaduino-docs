@@ -59,16 +59,16 @@ Reads a analog value.
   {{< tabpane id="1">}}
   {{< tab header="Functions" >}}
 void function_0_humiditySensor(){
-value = analogRead(pin_0_humiditySensor);
+int value = analogRead(pin_0_humiditySensor);
 function_0_humiditySensor();
 }
   {{< /tab >}}
   {{< tab header="Abridged" >}}
-value = analogRead(pin_0_humiditySensor);
+int value = analogRead(pin_0_humiditySensor);
   {{< /tab >}}
   {{< tab header="Switch" >}}
 void function_0_humiditySensor(){
-value = analogRead(pin_0_humiditySensor);
+int value = analogRead(pin_0_humiditySensor);
 state = 1;
 }
   {{< /tab >}}
